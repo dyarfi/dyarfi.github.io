@@ -1,0 +1,68 @@
+
+// Body
+$body-bg: #ffffff;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: #3097D1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #bf5329;
+
+// Typography
+//$icon-font-path: "../../fonts/vendor/bootstrap-sass/bootstrap/" !default;
+//$fa-font-path: "../../fonts/vendor/font-awesome/" !default;
+
+$font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
+//$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.8;
+$text-color: #636b6f;
+
+// -- color ---
+$state-danger-text: #a94442 !default;
+
+// Navbar
+$navbar-default-bg: #EEEEEE;
+
+// Buttons
+$btn-default-color: $text-color;
+$btn-font-weight: 300;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+$padding-base-vertical:     6px !default;
+$padding-base-horizontal:   11px !default;
+
+$padding-large-vertical:    9px !default;
+$padding-large-horizontal:  15px !default;
+
+$padding-small-vertical:    5px !default;
+$padding-small-horizontal:  10px !default;
+
+$padding-xs-vertical:       1px !default;
+$padding-xs-horizontal:     5px !default;
+
+$line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
+$line-height-small:         1.5 !default;
+
+$border-radius-base:        0px !default;
+$border-radius-large:       0px !default;
+$border-radius-small:       0px !default;
