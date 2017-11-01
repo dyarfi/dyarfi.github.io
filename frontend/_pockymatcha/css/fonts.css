@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'mkabelregular';
+    src: url('../fonts/mkabel-webfont.eot');
+    src: url('../fonts/mkabel-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mkabel-webfont.woff2') format('woff2'),
+         url('../fonts/mkabel-webfont.woff') format('woff'),
+         url('../fonts/mkabel-webfont.ttf') format('truetype'),
+         url('../fonts/mkabel-webfont.svg#mkabelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ostrich_sansblack';
+    src: url('../fonts/ostrich-black-webfont.eot');
+    src: url('../fonts/ostrich-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ostrich-black-webfont.woff2') format('woff2'),
+         url('../fonts/ostrich-black-webfont.woff') format('woff'),
+         url('../fonts/ostrich-black-webfont.ttf') format('truetype'),
+         url('../fonts/ostrich-black-webfont.svg#ostrich_sansblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

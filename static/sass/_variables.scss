@@ -1,6 +1,7 @@
 
 // Body
 $body-bg: #ffffff;
+$link-color: #ff4d42;
 
 // Borders
 $laravel-border-color: darken($body-bg, 10%);
@@ -20,9 +21,9 @@ $brand-danger: #bf5329;
 //$icon-font-path: "../../fonts/vendor/bootstrap-sass/bootstrap/" !default;
 //$fa-font-path: "../../fonts/vendor/font-awesome/" !default;
 
-$font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
-//$font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 14px;
+//$font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
+$font-family-sans-serif: "Helvetica", sans-serif;
+$font-size-base: 13.6px;
 $line-height-base: 1.8;
 $text-color: #636b6f;
 
@@ -30,7 +31,8 @@ $text-color: #636b6f;
 $state-danger-text: #a94442 !default;
 
 // Navbar
-$navbar-default-bg: #EEEEEE;
+$navbar-default-bg: transparent;
+//$navbar-default-bg: #ff4d42;
 
 // Buttons
 $btn-default-color: $text-color;
@@ -43,6 +45,15 @@ $input-color-placeholder: lighten($text-color, 30%);
 
 // Panels
 $panel-default-heading-bg: #fff;
+
+// Tabs 
+$nav-tabs-border-color:                     #ddd !default;
+// $nav-tabs-link-hover-border-color:          $gray-lighter !default;
+// $nav-tabs-active-link-hover-bg:             $body-bg !default;
+// $nav-tabs-active-link-hover-color:          $gray !default;
+$nav-tabs-active-link-hover-border-color:   #ddd !default;
+$nav-tabs-justified-link-border-color:            #ddd !default;
+// $nav-tabs-justified-active-link-border-color:     $body-bg !default;
 
 //== Components
 //

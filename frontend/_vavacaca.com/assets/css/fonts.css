@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'Carton_Six';
+	src: url('../fonts/Carton_Six.eot');
+	src: local('☺'), url('../fonts/Carton_Six.woff') format('woff'), url('../fonts/Carton_Six.ttf') format('truetype'), url('../fonts/Carton_Six.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AppleCasual';
+	src: url('../fonts/AppleCasual.eot');
+	src: local('☺'), url('../fonts/AppleCasual.woff') format('woff'), url('../fonts/AppleCasual.ttf') format('truetype'), url('../fonts/AppleCasual.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+  </head>
+
+  <body>
+    <div class="thumbnail">
+    <div id ="video">
+
+      <video preload="auto" loop>
+        <source src="pemikiran.webm" type="video/webm">
+        <source src="pemikiran.mp4" type="video/mp4">
+        <source src="pemikiran.ogv" type="video/ogg">
+      </video>
+    </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        //$("#video").css("display", "none"); //HIDE THE VIDEO INITIALLY
+        $(".thumbnail").hover(function ()
+                              {
+          //$("#video").css("display", "block"); //SHOW THE VIDEO ON HOVER
+          $("#video").children("video")[0].play();
+        },
+
+        function () {
+          var el =$("#video").children("video")[0];
+          el.pause();
+          el.currentTime = 0;
+        });
+      });
+    </script>
+  </body>
+</html>

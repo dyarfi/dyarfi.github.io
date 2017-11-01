@@ -1,0 +1,128 @@
+.leftDiv15 { margin-left:15px; }
+.leftDiv16 { margin-left:16px; }
+.leftDiv17 { margin-left:17px; }
+.leftDiv18 { margin-left:18px; }
+.leftDiv19 { margin-left:19px; }
+.leftDiv20 { margin-left:20px; }
+.leftDiv25 { margin-left:25px; }
+.leftDiv26 { margin-left:26px; }
+.leftDiv28 { margin-left:28px; }
+.leftDiv30 { margin-left:30px; }
+
+.rightDiv15 { margin-right:15px; }
+.rightDiv16 { margin-right:16px; }
+.rightDiv17 { margin-right:17px; }
+.rightDiv18 { margin-right:18px; }
+.rightDiv19 { margin-right:19px; }
+.rightDiv20 { margin-right:20px; }
+.rightDiv25 { margin-right:25px; }
+.rightDiv26 { margin-right:26px; }
+.rightDiv28 { margin-right:28px; }
+.rightDiv30 { margin-right:30px; }
+
+.topDiv15 { margin-top:15px; }
+.topDiv16 { margin-top:16px; }
+.topDiv17 { margin-top:17px; }
+.topDiv18 { margin-top:18px; }
+.topDiv19 { margin-top:19px; }
+.topDiv20 { margin-top:20px; }
+
+.topBotDiv15 { margin:15px 0px; }
+.topBotDiv16 { margin:16px 0px; }
+.topBotDiv17 { margin:17px 0px; }
+.topBotDiv18 { margin:18px 0px; }
+.topBotDiv19 { margin:19px 0px; }
+.topBotDiv20 { margin:20px 0px; }
+
+.leftDiv15,
+.leftDiv16,
+.leftDiv17,
+.leftDiv18,
+.leftDiv19,
+.leftDiv20,
+.leftDiv25,
+.leftDiv26,
+.leftDiv28,
+.leftDiv30,
+.rightDiv15,
+.rightDiv16,
+.rightDiv17,
+.rightDiv18,
+.rightDiv19,
+.rightDiv20,
+.rightDiv25,
+.rightDiv26,
+.rightDiv28,
+.rightDiv30,
+.topDiv15,
+.topDiv16,
+.topDiv17,
+.topDiv18,
+.topDiv19,
+.topDiv20,
+.topBotDiv15,
+.topBotDiv16,
+.topBotDiv17,
+.topBotDiv18,
+.topBotDiv19,
+.topBotDiv20 { display: block; }
+
+.p10 {
+	padding: 10px;
+}
+.p15 {
+	padding: 15px;
+}
+.p20 {
+	padding: 20px;
+}
+.p25 {
+	padding: 25px;
+}
+
+
+
+.fixed { position:fixed }
+
+.ft1 {
+	font-size: 1em;
+}
+.ft2 {
+	font-size: 2em;
+}
+.ft3 {
+	font-size: 3em;
+}
+.ft4 {
+	font-size: 4em;
+}
+.ft5 {
+	font-size: 5em;
+}
+.ft6 {
+	font-size: 6em;
+}
+.ft7 {
+	font-size: 7em;
+}
+.ft8 {
+	font-size: 8em;
+}
+.ft9 {
+	font-size: 9em;
+}
+.ft10 {
+	font-size: 10em;
+}
+.ft11 {
+	font-size: 11em;
+}
+.ft12 {
+	font-size: 12em;
+}
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}

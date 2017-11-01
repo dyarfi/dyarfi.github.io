@@ -1,0 +1,184 @@
+
+html { text-rendering: optimizeLegibility; font-smoothing: antialiased; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
+body {	
+	background: transparent url('../img/bg.jpg') repeat left top / 5% auto; 
+	color: #129549;
+}
+.header {
+	/*max-height: 601px;*/
+	/*background: url('../img/bg-header.jpg') left top repeat-x; */
+}
+.bg-header {
+	/*min-height:601px;*/
+	background: transparent url('../img/headline-desktop.jpg') repeat-x center top / 100% auto;
+	overflow: hidden;
+}
+.bg-header-mobile {
+	/*height: 601px;*/
+	/*background: transparent url('../img/headline-mobile.jpg') repeat-x scroll center top / 100% auto;*/
+	/*overflow: hidden;	*/
+}
+.mkabelregular {
+	font-family: 'mkabelregular';
+}
+a.terms {
+	width: 100%;
+	display: inline-block;
+	color: black;
+	margin: 50px auto 20px auto;
+}
+.terms-content {
+	display: none;
+}
+.roll-note {
+	display: inline-block;
+	height: 400px;
+	clear: both;
+	text-align: center;
+	font-size: 1.8em;
+	font-weight: bolder;
+	font-family: 'mkabelregular';
+	padding: 60px 140px;
+	margin: 0 auto;
+	text-align: center;
+}
+.roll-note-mid:before {	
+	content: "";
+	width: 500px;
+	height: 48px;
+    position: relative;
+    top: -48px;
+	display: block;
+	background: url('../img/roll-note-top.png') no-repeat center bottom;
+}
+.roll-note-mid {		
+	display: block;
+	width: 500px; 
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	position: absolute;
+	/*background: url('../img/roll-note-mid.png') no-repeat center top / 80% auto;*/
+	/*overflow: hidden;*/
+	background: url('../img/roll-note-mid.png') repeat-y center top;
+}
+.roll-note-mid:after {	
+	content: "";
+	width: 500px;
+	height: 52px;
+    position: relative;
+    bottom: -42px;
+	display: block;
+	background: url('../img/roll-note-bot.png') no-repeat center bottom;
+}
+.roll-note p {
+	width: 70%;
+	margin: 0 auto;
+}
+.footer {
+	height: 302px;
+	padding:0px;
+	margin: 0 auto; 
+	background: transparent url('../img/footer.png') center bottom no-repeat;
+}
+.form-quiz-pocky label {
+	font-weight: normal;
+	color: #ee4c9b;	
+	margin-right: 25px;
+}
+.form-quiz-pocky input[type="radio"] {
+	vertical-align: top;
+	margin-top: 7px;
+} 
+.form-quiz-pocky button:hover {
+	color: green;
+	-webkit-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.8);
+}
+.form-quiz-pocky .btn-default { 
+	background: rgba(253,255,245,1);
+	background: -moz-linear-gradient(top, rgba(253,255,245,1) 0%, rgba(253,255,245,1) 5%, rgba(210,255,82,1) 18%, rgba(145,232,66,1) 88%, rgba(97,194,6,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(253,255,245,1)), color-stop(5%, rgba(253,255,245,1)), color-stop(18%, rgba(210,255,82,1)), color-stop(88%, rgba(145,232,66,1)), color-stop(100%, rgba(97,194,6,1)));
+	background: -webkit-linear-gradient(top, rgba(253,255,245,1) 0%, rgba(253,255,245,1) 5%, rgba(210,255,82,1) 18%, rgba(145,232,66,1) 88%, rgba(97,194,6,1) 100%);
+	background: -o-linear-gradient(top, rgba(253,255,245,1) 0%, rgba(253,255,245,1) 5%, rgba(210,255,82,1) 18%, rgba(145,232,66,1) 88%, rgba(97,194,6,1) 100%);
+	background: -ms-linear-gradient(top, rgba(253,255,245,1) 0%, rgba(253,255,245,1) 5%, rgba(210,255,82,1) 18%, rgba(145,232,66,1) 88%, rgba(97,194,6,1) 100%);
+	background: linear-gradient(to bottom, rgba(253,255,245,1) 0%, rgba(253,255,245,1) 5%, rgba(210,255,82,1) 18%, rgba(145,232,66,1) 88%, rgba(97,194,6,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfff5', endColorstr='#61c206', GradientType=0 );
+	border: 1px solid #a1fc26;
+
+	-webkit-box-shadow: 0px 0px 5px -2px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 5px -2px rgba(0,0,0,1);
+	box-shadow: 0px 0px 5px -2px rgba(0,0,0,1);
+}
+.ostrich_sansblack {
+	letter-spacing: .001em;
+	/*font-weight: normal;*/
+	font-size: 1.5em;
+	font-family: 'ostrich_sansblack';	
+}
+.scroll-down {
+	height: 92px;
+	width: 122px;
+	display: block;
+	position: relative;
+	/*li: -9999;*/
+	outline: none !important;
+	background: url('../img/scroll-down.png') top center no-repeat;
+}
+.headline {	
+	padding: 0;
+	margin: 50px auto;
+	font-weight: bold;
+	font-family: 'mkabelregular';
+	font-size: 2.6em;
+	text-align: center;
+	max-width: 50%;
+	line-height: 1.4em;
+	/*font-weight: 3000;*/
+	/*font-weight: 1000em;*/
+	/* WebKit (Safari/Chrome) Only */
+    /*-webkit-text-stroke: 1px #affabf;*/
+  
+    /* If we weren't using text-shadow, we'd set a fallback color
+     and use this to set color instead
+    -webkit-text-fill-color: white; */
+
+	text-shadow:
+    3px 3px 0 #affabf,
+    /* Simulated effect for Firefox and Opera
+       and nice enhancement for WebKit */
+   -1px -1px 0 #affabf,  
+    1px -1px 0 #affabf,
+   -1px  1px 0 #affabf,
+    1px  1px 0 #affabf;
+}
+.quiz-head {
+	font-weight: bold;
+	margin: 0px auto 50px auto;
+	text-align: left;
+	text-transform: uppercase;
+	font-family: 'mkabelregular';
+	text-shadow:
+    3px 3px 0 #affabf,
+    /* Simulated effect for Firefox and Opera
+       and nice enhancement for WebKit */
+   -1px -1px 0 #affabf,  
+    1px -1px 0 #affabf,
+   -1px  1px 0 #affabf,
+    1px  1px 0 #affabf;
+}
+.img-pocky, .img-pocky-matcha {
+	animation-duration: 3s;
+	animation-delay: .5s;
+ 	animation-iteration-count:infinite;
+
+	-moz-animation-duration: 3s;
+  	-moz-animation-delay: .5s;
+  	-moz-animation-iteration-count: infinite;
+
+	-webkit-animation-duration: 3s;
+  	-webkit-animation-delay: .5s;
+  	-webkit-animation-iteration-count: infinite;
+}
+/*** Boostrap Override ***/

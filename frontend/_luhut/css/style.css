@@ -1,0 +1,542 @@
+html {
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  padding-top: 50px;
+  font-family: 'gotham_lightregular';
+}
+.full-width{
+  width: 100%;
+  padding: 0;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9
+{padding: 0;}
+.row{margin: 0;}
+/* CAROUSEL QUOTE */
+/*-------------------------------*/
+/*      Code snippet by          */
+/*      @maridlcrmn              */
+/*-------------------------------*/
+.carousel-inner > .item{
+  margin: auto;
+  width: 60%;
+}
+.carousel-inner-detail > .item {width: 100%;}
+.quote {
+  color: rgba(0,0,0,.1);
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+/*-------------------------------*/
+/*    Carousel Fade Transition   */
+/*-------------------------------*/
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 60px;
+  margin-top: 10%;
+}
+#fade-quote-carousel.carousel .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -ms-transition-property: opacity;
+  transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+  -ms-transition-property: opacity;
+  transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 10px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: #c2b39a;
+  border: none;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li.active{
+  background-color: #4f4b4b;
+  border: none;
+}
+#fade-quote-carousel blockquote,
+.pemikiran-homepage blockquote {
+  text-align: left;
+  border: none;
+  padding: 0;
+  color: #000;
+}
+#fade-quote-carousel .profile-circle {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 100px;
+}
+/*-------------------------------*/
+/*      Apollo hover oeffect     */
+/*-------------------------------*/
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+/* Common style */
+.apollo-hover figure {
+  position: relative;
+  /*float: left;*/
+  overflow: hidden;
+  margin: 0;
+  /*min-width: 320px;*/
+  max-width: 100%;
+  max-height: 100%;
+  /*width: 48%;*/
+  height: auto;
+  background: #3085a3;
+  text-align: left;
+  cursor: pointer;
+}
+
+.apollo-hover figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.apollo-hover figure figcaption {
+  /*padding: 2em;*/
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.apollo-hover figure figcaption::before,
+.apollo-hover figure figcaption::after {
+  pointer-events: none;
+}
+
+.apollo-hover figure figcaption,
+.apollo-hover figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.apollo-hover figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.apollo-hover figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+.apollo-hover figure h2 span {
+  font-weight: 800;
+}
+
+.apollo-hover figure h2,
+.apollo-hover figure p {
+  margin: 0;
+  position: relative;
+  padding-left: 10px;
+}
+.apollo-hover figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/* Individual effects */
+
+/*-----------------*/
+/***** Apollo *****/
+/*-----------------*/
+
+figure.effect-apollo {
+  background: #B4A283;
+}
+figure.effect-apollo video,
+figure.effect-apollo img {
+  opacity: 0.3;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale3d(1.05,1.05,1);
+  transform: scale3d(1.05,1.05,1);
+}
+
+figure.effect-apollo figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  content: '';
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform: scale3d(3,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+  transform: scale3d(3,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+
+figure.effect-apollo p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 3em;
+  padding: 0 1em;
+  max-width: 150px;
+  border-right: 4px solid #fff;
+  text-align: right;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+figure.effect-apollo .caption-quotes-page{
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 1em;
+  width: 100%;
+  text-align: left;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+  background: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+}
+figure .effect-apollo h2 {
+  text-align: left;
+  position: relative;
+  padding-top: 0;
+  padding-left: 5px;
+}
+
+figure.effect-apollo:hover video,
+figure.effect-apollo:hover img {
+  opacity: 1;
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
+}
+
+figure.effect-apollo:hover figcaption::before {
+  -webkit-transform: scale3d(3,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+  transform: scale3d(3,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+figure.effect-apollo:hover .caption-quotes-page,
+figure.effect-apollo:hover p {
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/*-----------------*/
+/***** SLICING DIV *****/
+/*-----------------*/
+
+.slice {
+  background: transparent;
+  position: relative;
+}
+.slice-blue:before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  border-top: 100px solid #7396a6;
+  border-right: 100px solid transparent;
+  width: 0;
+}
+.slice-red:before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  border-top: 100px solid #7b2c2c;
+  border-right: 100px solid transparent;
+  width: 0;
+}
+.slice-white:before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  border-top: 100px solid #fff;
+  border-right: 100px solid transparent;
+  width: 0;
+}
+.slice-brown:before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  border-top: 100px solid #a7864e;
+  border-right: 100px solid transparent;
+  width: 0;
+}
+.blue-big:before {
+  border-top: 125px solid #7396a6;
+  border-right: 125px solid transparent;
+}
+.red-big:before {
+  border-top: 180px solid #7b2c2c;
+  border-right: 180px solid transparent;
+}
+.white-big:before {
+  border-top: 180px solid #fff;
+  border-right: 180px solid transparent;
+}
+
+/*.slice-white-right:before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  border-top: 100px solid #fff;
+  border-left: 100px solid transparent;
+  width: 0;
+}*/
+.page-blue-big h2,
+.red-big h2{
+  position: relative;
+  color: #000;
+  margin: 0;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+/* -------------------- */
+/* CUSTOM CSS GOES HERE */
+/* -------------------- */
+.img-ctr{
+  display: block;
+  margin: 0 auto;
+}
+.img-float-left{
+  float: left;
+  margin-right: 20px;
+}
+.img-float-right{
+  float: right;
+  margin-left: 20px;
+}
+.color-red{color:#7b2c2c;}
+.color-black{color: #000;}
+.main-photo {
+  position: relative;
+  color: #fff;
+}
+.main-photo-img{
+  width: 100%;
+}
+.main-photo blockquote{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  border-left: none;
+}
+blockquote p{margin: 0; text-align: center}
+.quotes-home{background-color:#b4a283; }
+.profile-homepage{position: relative;}
+.profile-item{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+.profile-photo-homepage{width: 100%;}
+.pemikiran{
+  background: #a9a88e;
+}
+.pemikiran-homepage{
+  padding: 50px;
+  padding-top: 12%;
+}
+#myTabContent .list-group-item{border: none;}
+a.list-group-item {
+  height:auto;
+  min-height:252px;
+}
+.stars {
+  margin:20px auto 1px;
+}
+.nav-tabs
+{
+  border: none;
+  color: red;
+}
+.nav-tabs > li{float: right;}
+.nav-tabs > li.active > a, .nav-tabs > li > a{
+  border: 1px solid #a9a88e;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-radius: 0;
+  margin-right: 0;
+}
+.nav-tabs > li.active > a{
+  color: #000;
+  text-decoration: underline;
+}
+.title-white{
+  color: #fff;
+  font-size: 3em;
+  font-weight: 700;
+  font-family: 'gotham_boldregular';
+}
+/*.bracket-quotes{font-size: 6em; line-height: 0;}*/
+.btn-box{
+  color: #fff;
+  background: transparent;
+  border-radius: 0;
+  border: 2px solid #fff;
+  font-weight: bold;
+  float: right;
+}
+.navbar-default .navbar-nav > li > a{
+  color: #000;
+  font-weight: bold;
+}
+.head-photo-img, .head-page-contact{
+  color: #fff;
+  position: relative;
+  padding-left: 30px;
+  padding-top: 33px;
+  margin-top: 0;
+  margin-bottom: -66px;
+}
+.head-photo-img a,.head-photo-img a:hover{text-decoration: none;}
+.head-page-contact{color: #000;}
+.profile-home-bottom{
+  background: #7396A6;
+  padding: 0;
+  text-align: justify;
+  color: #fff;
+}
+.profile-home-bottom p{padding: 0 20px 10px;}
+.profile-home-bottom h2{
+  text-align: left;
+  position: relative;
+  padding-top: 25px;
+  padding-left: 25px;
+  margin: 0;
+  color: #000;
+}
+/*.photo-profile-home{position: relative; height: 500px;}
+.photo-profile-home img{
+  position: absolute;
+  bottom: 0;
+}*/
+
+.footer{
+  background: #242426;
+  color: #fff;
+  padding: 10px 0;
+}
+.title-web{
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+.footer form{color: #000;}
+.footer .btn{padding: 3px;}
+.contact-page-brown{
+  background: #B4A283;
+  padding: 50px 0 30px;
+}
+.contact-page-brown label{font-weight: normal;}
+.bottom-detail,
+.contact-page-brown .form-control{
+  background: #cfc0a2;
+  border-radius: 0;
+  border-color: transparent;
+}
+.contact-page-brown .form-horizontal .form-group {
+  margin: 0;
+  margin-top: 30px;
+}
+.text-contact{
+  margin: 80px auto;
+}
+.text-contact p{margin: 20px 0;}
+.form-horizontal .control-label{text-align: left;}
+.contact-page-brown .btn-lg {
+  border-radius: 0;
+  background: #7396a6;
+  border: transparent;
+}
+.plus{
+  font-size:3em;
+  margin-bottom:-60px;
+  margin-left: 15px;
+  color:#fff;
+  position: relative;
+}
+.heading-profile-home{padding: 40px;margin-left: 20px !important;}
+.profile-page{
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 1.2em;
+  line-height: 200%;
+  letter-spacing: 1px;
+}
+.profile-page h3{font-weight: bold;}
+.profile02{margin-right: -20px;}
+.profile02-text{
+  padding: 2%;
+  padding-top: 5%;
+}
+.profile03{margin-left: -20px;}
+.page-detail{font-size: 1.2em;}
+.bottom-detail{padding: 0 30px;}
+#myTabs{margin-top: 42px;}
+.img-thumbnail-listing{overflow: hidden; max-height: 550px;}
+.kebangkitan{
+  position: absolute;
+  bottom:10%;
+  left: 0;
+  font-size: 3em;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: rgba(0,0,0,0.7);
+  padding: 10px 20px;
+}
+.hilights{
+  text-transform: uppercase;
+  background: rgba(0,0,0,0.7);
+  padding: 10px 20px;
+}
+.big-quotes{
+  color:#fff;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+/* --------------------- */
+/* Media queries */
+/* --------------------- */
+@media screen and (max-width: 50em) {
+  .content {
+    padding: 0 10px;
+    text-align: center;
+  }
+  .grid figure {
+    display: inline-block;
+    float: none;
+    margin: 10px auto;
+    width: 100%;
+  }
+}
+@media (max-width:1280px){
+  .img-thumbnail-listing{overflow: hidden; max-height: 370px;}
+  .big-quotes{font-size: 1.5em;}
+  .pemikiran-homepage{padding: 12% 50px 40px;}
+}
+@media (max-width:1024px){
+  .img-thumbnail-listing{overflow: hidden; max-height: 300px;}
+  .big-quotes{font-size: 1em;}
+}

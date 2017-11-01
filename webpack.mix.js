@@ -28,7 +28,7 @@ mix.browserSync({
     host: 'localhost',
     port: 3000,
     proxy: 'localhost/dyarfi.github.io/',
-    files: ["static/css/*.css","static/sass/*.sass", "static/js/*.js","index.html"],
+    files: ["static/css/*.css","static/css/minified/*.css","static/sass/*.sass", "static/js/*.js","index.html"],
     // Open the site in Chrome & Firefox
     browser: ["google chrome", "firefox"],
     // Don't show any notifications in the browser.

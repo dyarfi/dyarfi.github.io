@@ -1,0 +1,14 @@
+.title-web{
+  /*position: absolute !important;*/
+  /*left: 0 !important;*/
+  /*right:0 !important;*/
+  text-align: center;
+  right: 0 !important;
+  left: 0 !important;
+  z-index: -1;
+}
+.title-web img {
+  text-align: center !important;
+  margin: 0 auto;
+  position: relative;
+}

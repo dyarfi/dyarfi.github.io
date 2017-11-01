@@ -1,0 +1,215 @@
+.top-list {
+	height: 6px;
+	background: #2491d0;
+	display: block;
+	margin: 0 auto 0px auto;
+}
+.search-form {
+	border-radius: 10px;
+	background: #2491d0;
+	padding: 0px;
+	margin: 10px auto 0 auto;
+}
+.search-form input[type="text"] {
+	margin: 3px auto;
+	border: 0px;
+}
+.search-form input {
+	height: 26px;
+	border-radius: 0px;
+	/*padding-right: 10px;*/
+	margin-right: 0px;
+}
+.search-form .btn-info {
+	background: transparent;
+	border: 0px;
+}
+.bottom-navigation {
+	background-color: #5CB85C;
+}
+.logo {
+	margin: 15px 0 10px 15px;
+	/*position: absolute;*/
+}
+.top-navigation {
+	background: rgba(255,255,255, 0.6);
+	border-radius: 0px;
+	min-height: 73px;
+	border: 0px;
+	z-index: 99;
+}
+.top-navigation .navbar-toggle {
+	margin-top:15px; 
+}
+ul.navigation {
+	margin: 0px auto 0 auto;
+	padding: 8px 0px;
+}
+.top-navigation .navbar-nav li a {
+	color: #000;
+	padding: 3px 8px;
+	font-size: 0.9em
+}
+.top-navigation .navbar-nav li a:hover {
+	color: #666;	
+	/*text-decoration: underline;*/
+	background: rgba(255,255,255, 0.4);
+	/*padding: 5px;*/
+	/*margin: 5px*/
+}
+.top-navigation .navbar-toggle {
+	background: #fff
+}
+.top-navigation .navbar-toggle:hover {
+	background: #f2f2f2
+}
+.user-account {
+	margin: 8px 0 0 5px;
+}
+.slider-top {
+	/*top:-120px;*/
+	top:-20px;
+	z-index: 1
+}
+.slider-top .item img {
+	width: 100%;
+}
+.live-chat {
+	top:58px;
+	font-size: 0.99em;
+	background: rgba(255,255,255,0.7);
+	color: #0A0A0A;
+	padding: 11px 20px 25px 20px;
+}
+.middle-content {
+	/*margin-top:-120px;*/
+	margin-top:-20px;
+	background: rgba(139,192,69,1);
+}
+.middle-nav {
+	background: #dedede;
+}
+.middle-nav li {
+	padding-top: 12px;
+	padding-bottom: 12px;	
+}
+.middle-nav li a {
+	padding: 4px 0px;
+	border-radius: 0px;
+}
+.middle-nav li a:hover {
+	background: none;
+} 
+.middle-nav li a span {
+	display: block;
+}
+.middle-tools {
+	margin: 5px 0 5px 0
+}
+.right-banner {
+	margin: 40px auto 0 auto
+}
+.doctor-schedule, .health-tool, .first-aid {	
+	display: inline-block;
+	height: 68px;
+	width: 68px;
+	text-indent: -99999px;
+	/*border: 1px solid #990000;*/
+}
+.doctor-schedule:focus, .health-tool:focus, .first-aid:focus {
+	outline: none;
+}
+.doctor-schedule {
+	background: url(../../assets/images/health_tools.png) no-repeat;
+}
+.doctor-schedule:hover {
+	background: url(../../assets/images/health_tools.png) 0px -68px no-repeat;
+}
+.health-tool {
+	background: url(../../assets/images/health_tools.png) -100px 0px no-repeat;
+}
+.health-tool:hover {
+	background: url(../../assets/images/health_tools.png) -100px -68px no-repeat;
+}
+.first-aid {
+	background: url(../../assets/images/health_tools.png) -200px 0px no-repeat;
+}
+.first-aid:hover {
+	background: url(../../assets/images/health_tools.png) -200px -68px no-repeat;
+}
+
+.mid-holder { }
+.mid-content { }
+.mid-holder .thumbnail {
+	height: auto !important;
+	overflow: hidden;
+	max-height: 154px;
+	padding-top:7px; 
+}
+.mid-holder .thumbnail .caption {
+	position: relative;
+	/*top:-50px;*/
+	margin: 0px auto;
+	color: #666;
+	background: rgba(255,255,255,0.8);
+	/*width: 100%;*/
+	/*height: 100%;*/
+	/*-webkit-transform: scale(1.0) translateZ(0);*/
+		/*-moz-transform: scale(1.0) translateZ(0);*/
+			/*transform: scale(1.0) translateZ(0);*/
+	/*-webkit-transition: -webkit-transform 0.5s ease 0.25s;*/
+		/*-moz-transition:    -moz-transform 0.5s ease 0.25s;*/
+			/*transition:         transform 0.5s ease 0.25s;*/
+}
+.mid-holder .thumbnail:hover
+.caption {	
+  top:20px;
+	/*-webkit-transform: scale(1.0) translateZ(0);*/
+		/*-moz-transform: scale(1.0) translateZ(0);*/
+			/*transform: scale(1.0) translateZ(0);*/
+}
+.mid-holder .thumbnail:hover
+.overlay-figure-background {
+  /*opacity: 1;*/
+}
+.overlay-figure-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-image: linear-gradient(to bottom, rgba(38,50,72, 0.5), rgba(38,50,72, 0.85));
+}
+/*
+.mid-holder .thumbnail:hover {
+    -webkit-transform: scale(1.02) translateZ(0);
+       -moz-transform: scale(1.02) translateZ(0);
+            transform: scale(1.02) translateZ(0);
+}
+*/
+.mid-holder .thumbnail .caption h5 { 
+	margin: 0px;
+	font-family: Helvetica;
+	font-size: 0.92em;
+}
+.mid-box {
+	margin: 40px 0 0 0
+}
+.bottom-navigation {
+	font-size: 0.9em;
+	color: #ffffff;
+	padding: 5px 0px
+}
+.bottom-navigation li a {
+	color: #ffffff;
+	padding: 8px 8px;
+	font-size: 0.99em
+}
+.bottom-navigation li a:hover {
+	background: none;
+	color: #ccc;
+}
+.ad-sense {
+	margin: 10px 0 20px 0;
+}
