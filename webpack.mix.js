@@ -15,6 +15,8 @@ const { mix } = require('laravel-mix');
 //mix.js('resources/assets/js/app.js', 'public/js')
    //.sass('resources/assets/sass/app.scss', 'public/css');
 
+mix.setPublicPath('./');
+
 mix.sass('static/sass/app.scss', 'static/css/minified').options({
       processCssUrls: false
 });

@@ -52,7 +52,7 @@ $('.fancybox-thumbs').fancybox({
 				/* This is the correct way to loop over the directory. */
 				while (false !== ($entry = readdir($handle))) {
 					if ($entry != "." && $entry != ".." && $entry != "index.php" && $entry != '.DS_Store') {
-						echo("<li id=".$entry."><h3>".ucfirst($entry)."</h3>");
+						echo("<li id=\"".$entry."\"><h3>".ucfirst($entry)."</h3>");
 						//Path to folder which contains images
 						$dirname = $entry . '/';
 						//Use glob function to get the files

@@ -7731,6 +7731,7 @@ button.close {
   }
 }
 
+/*@import "static/bootstrap/scss/bootstrap";*/
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -10859,6 +10860,11 @@ html, body {
 | Main
 |--------------------------------------------------------------------------
 */
+blockquote cite {
+  font-family: sans serif;
+  font-size: 0.9em;
+}
+
 .main {
   margin-top: 24px;
   margin-bottom: 48px;

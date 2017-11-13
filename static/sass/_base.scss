@@ -74,6 +74,13 @@ html, body {
 |--------------------------------------------------------------------------
 */
 
+blockquote {
+    cite {
+        font-family:sans serif;
+        font-size:0.9em
+    }    
+}
+
 .main {
     margin-top: 24px;
     margin-bottom: 48px;
