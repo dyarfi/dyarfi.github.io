@@ -369,10 +369,16 @@ footer { background: #005298 }
 }
 .service-tab li a:hover, .service-tab li a.active {
 	padding-left:6px !important;
-	background: rgba(255, 255, 255, 0.6);
+	background: rgba(255, 255, 255, 0.7);
 }
 .service-content-tab {	
-	background: rgba(255, 255, 255, 0.6);
+	background: rgba(255, 255, 255, 0.7);
+}
+.service-content-tab h4, .service-content-tab p {
+	color: #555555
+}
+.service-content-tab p {
+	font-size: 1.2rem
 }
 .service-content-tab img.img-responsive {
 	width: 100%;
