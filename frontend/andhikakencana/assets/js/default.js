@@ -50,10 +50,19 @@ $(document).ready(function() {
 		});
 	});
 	
-	$('.menu-tab li.active').removeClass('active').find('a').trigger('click');
+	$('.menu-tab li.active, .service-tab li.active').removeClass('active').find('a').trigger('click');
 	
 	$('.menu-tab a').click(function (e) {		
 		var i = $('.menu-tab').find('li').length;
+		//alert($(this).parent().parent().html());
+		//$('.nav li.active').removeClass('active').find('a').trigger('click');
+		$(this).parent().parent().removeClass('active').find('a').removeClass('active');
+		$(this).addClass('active');
+		$(this).animate({opacity:'0.72'}).animate({opacity:'1'});
+	});
+
+	$('.service-tab a').click(function (e) {		
+		var i = $('.service-tab').find('li').length;
 		//alert($(this).parent().parent().html());
 		//$('.nav li.active').removeClass('active').find('a').trigger('click');
 		$(this).parent().parent().removeClass('active').find('a').removeClass('active');
@@ -113,4 +122,23 @@ $.extend({
 	getHistory: function () {
 		//alert($.cookie('keywords'));
 	}
+});
+
+$(window).scroll(function() {		
+	menuFixTop();
+	function menuFixTop () {
+		var screen = $(window).scrollTop();
+		if(screen >= $('#nav-handler').height()) {
+			//$('#nav-handler').addClass('navbar-fixed-top');
+		} else {			
+			//$('#nav-handler').removeClass('navbar-fixed-top');
+		}
+	}
+	/* this is supposed to be detecting dropdown menu to uncollapse 
+	if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+	*/
 });
