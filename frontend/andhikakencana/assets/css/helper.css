@@ -69,13 +69,13 @@
 .topDiv19 { margin-top:19px; }
 .topDiv20 { margin-top:20px; }
 
-.botDiv10 { margin-top:10px; }
-.botDiv15 { margin-top:15px; }
-.botDiv16 { margin-top:16px; }
-.botDiv17 { margin-top:17px; }
-.botDiv18 { margin-top:18px; }
-.botDiv19 { margin-top:19px; }
-.botDiv20 { margin-top:20px; }
+.botDiv10 { margin-bottom:10px; }
+.botDiv15 { margin-bottom:15px; }
+.botDiv16 { margin-bottom:16px; }
+.botDiv17 { margin-bottom:17px; }
+.botDiv18 { margin-bottom:18px; }
+.botDiv19 { margin-bottom:19px; }
+.botDiv20 { margin-bottom:20px; }
 
 .topBotDiv2 { margin:2px 0px; }
 .topBotDiv5 { margin:5px 0px; }
