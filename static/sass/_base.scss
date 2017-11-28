@@ -2,7 +2,47 @@ html, body {
     margin: 0;
     padding: 0;
 }
-
+/*
+|--------------------------------------------------------------------------
+| App
+|--------------------------------------------------------------------------
+*/
+#app a:hover, #app .btn:hover {
+	-webkit-transition: all 0.25s ease-in;
+	transition: all 0.25s ease-in;
+}
+#app a.navbar-brand:hover {
+	-webkit-transition: color 0.15s ease-in;
+	transition: color 0.15s ease-in;
+}
+#app .nav-tabs li a:hover {
+	color:rgb(73, 73, 73);
+	-webkit-transition: color 0.65s ease-in, background 0.65s ease;
+	transition: color 0.65s ease-in, background 0.65s ease;
+}
+#app .nav-tabs li a:hover span.fa, #app .nav-tabs li.active a span.fa {
+	color: #ff4d42;
+	-webkit-transform: translate3d(20px,10px,0) 0.50s ease-in-out;
+	transform: translate3d(20px,10px,0) 0.50s ease-in-out;
+}
+#app .nav-tabs li a:hover span.fa {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+	transition: all 0.30s ease-in-out;
+}
+p.footnote span.fa-heart {
+	animation: beat 0.95s ease-in-out infinite;
+}
+/* CSS Animation */
+@-moz-keyframes beat {
+    to { -moz-transform: scale(1.2,1.2); }
+}
+@-webkit-keyframes beat {
+    to { -webkit-transform: scale(1.2,1.2); }
+}
+@keyframes beat {
+    to {transform:scale(1.2,1.2);}
+}
 /*
 |--------------------------------------------------------------------------
 | Nav
