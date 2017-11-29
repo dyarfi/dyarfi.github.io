@@ -231,7 +231,8 @@ footer { background: #005298 }
 }
 .holder_middle {
 	position: absolute;
-	right: 97px; 
+	right: 70px; 
+	/* right: 150px; */
 	height: auto; 
 	margin: 4px 0px 0 0; 
 	z-index: 12;	
@@ -240,9 +241,9 @@ footer { background: #005298 }
 .holder_form_top {
 	background: #ffffff; 
 	overflow: hidden; 
-	max-width: 410px;
-	min-width: 410px;	
-	margin: 0 13px 0 33px;
+	max-width: 420px;
+	min-width: 420px;	
+	margin: 0 34px 0 33px;
 	height: 60px; 
 	display: block;
 	display: inline-block;
@@ -710,31 +711,123 @@ button.btn {
  *
  * Small devices (landscape phones, 576px and up)
  */
-@media (min-width: 576px) {  }
+@media (min-width: 576px) {  
+	#nav-handle.container {
+		display: block !important;
+		margin: 0 auto !important;
+		text-align: center;
+	}
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { }
+@media (min-width: 768px) { 
+	#nav-handler .navbar-collapse.collapse {
+		display: inline-block !important;
+	}
+} 	
+/* Medium devices (tablets, 768px and down) */
+@media (min-width: 576px) and (max-width: 768px) { 
+	#nav-handler .navbar-collapse-menu {
+		margin-top: 15px !important;
+	}
+	#nav-handler .navbar-collapse.collapse {
+		display: inline-block !important;
+	}
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media (min-width: 992px) { 
+
+ }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) { 
+	#nav-handler .navbar-collapse.collapse {
+		display: inline !important;
+	} 
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) { }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767px) { 
-	
+@media (max-width: 767px) { 	
+
+	/* .container>.navbar-header, .container>.navbar-collapse { */
+		/* margin-left: 0px; */
+		/* margin-right: 0px; */
+	/* } */
 }
-
+@media (max-width: 979px) {
+	/* .navbar .container { */
+		/* padding: 10px */
+	/* } */
+}
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991px) { }
+@media (max-width: 991px) {	
+	#carousel_home > .carousel-inner > .item {
+		width: 100% !important;		
+	}
+	#carousel_home > .carousel-inner > .item > .img-responsive {
+		/* position: absolute; */
+		width: 100% !important;
+		height: auto !important;
+		/* display: none !important; */
+	}
+	.navbar-collapse-menu {
+		margin-top: 20px !important;
+	}
 
+	/* .holder_form_top {
+		margin: 0 -40px 0 33px;
+	}	
+	.holder_form_right {
+		position: absolute;
+		top: 74px;
+		left: 10px;
+		z-index: 12;
+		width: 400px;
+		height: 320px;
+	} */
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (max-width:576px) and (max-width: 992px) { 
+
+	/* 	
+	.holder_middle {
+		right: 70px !important;
+	} */
+	/* .holder_form_right { */
+		/* right: 13px !important; */
+	/* } */
+ }
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199px) { }
-
+@media (max-width: 1199px) { 
+	#carousel_home > .carousel-inner > .item {
+		height: 400px;
+	}
+	#carousel_home > .carousel-inner > .item > .img-responsive {
+		/* position: absolute; */
+		/* width: 100% !important; */
+		height: 400px !important;
+		/* display: none !important; */
+	}
+	.holder_form_right {
+		top: 70px;
+		right: 35px;
+	}
+}
+/* Large devices (desktops, less than 1280px) */
+@media (min-width: 1279px) { 	
+	.holder_form_top {
+		margin: 0 0px 0 33px;
+	}	
+	.holder_form_right {
+		top: 70px;
+		right: 0px !important;
+	}
+}
 /* Extra large devices (large desktops)
  * No media query since the extra-large breakpoint has no upper bound on its width
  */

@@ -49,13 +49,13 @@ p.footnote span.fa-heart {
 |--------------------------------------------------------------------------
 */
 .navbar-default {
-    background: transparent url('../img/bg.jpg') left top repeat-x;
+    background: transparent url('../img/bg.jpg') left top repeat fixed;
 }
 .navbar-default:before {
     position: relative;
     background-color:#ff4d42;
     width:100%;
-    height:4px;
+    height:3px;
 }
 .navbar-default .navbar-brand {
     color:#ff4d42;
@@ -64,7 +64,6 @@ p.footnote span.fa-heart {
     font-size:1.1em;
     font-weight:bold
 }
-
 /*
 |--------------------------------------------------------------------------
 | Alert
@@ -149,14 +148,27 @@ blockquote {
 | Footer
 |--------------------------------------------------------------------------
 */
-
+.footer:before {
+    position: absolute;
+    background-color: #ff4d42;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 0;
+}
 .footer {
-    padding-top:50px;    
+    padding-top:25px;    
     padding-bottom:25px;
     width: 100%;
+    border-top:1px solid #e6e5e5;
+    background: transparent url('../img/bg.jpg') left top repeat fixed;
     /* height: 50px; */
     /* background-color: #222; */
     color: #FFF;    
+    position: relative;
 }
 
 .footer p {
