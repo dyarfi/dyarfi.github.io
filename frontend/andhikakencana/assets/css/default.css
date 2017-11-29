@@ -627,13 +627,20 @@ span.readmore a:hover {
 }
 .copyright { color: #fff; margin: 50px 0 0 0;}
 .socMedBlock {
-    float: left;
+	/* float: right; */
+	width: auto;
+	margin: 0 auto 0 auto;
+	text-align: center
+}
+.socMedBlock ul {
+	width: 100%;
 }
 .socMedBlock li {
     float: left;
 	list-style-type: none;
-    margin-right: 1em;
-	margin-left: 0em;
+    margin-right: 0em;
+	margin-left: 5em;
+	/* margin: 0 auto; */
 }
 .socMedBlock li:last-child {
     margin-right: 0;
@@ -648,6 +655,7 @@ span.readmore a:hover {
     overflow: hidden;
     padding-right: 1em;
 	font-size: 0.88em;
+	margin: 0 auto
 }
 .runningText span {
     background-image: linear-gradient(#EFEDEE, #D4D2D3);
