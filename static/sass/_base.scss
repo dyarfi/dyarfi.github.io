@@ -61,7 +61,7 @@ p.footnote span.fa-heart {
     color:#ff4d42;
 }
 .nav.nav-tabs {
-    font-size:1.1em;
+    font-size:1.25em;
     font-weight:bold
 }
 /*
@@ -96,6 +96,10 @@ p.footnote span.fa-heart {
 | Tab
 |--------------------------------------------------------------------------
 */
+.tab-pane {
+    padding-top:20px;
+    padding-bottom:20px;
+}
 .tab-pane h5 {
     border-bottom:1px solid #eeeeee;
     padding-bottom:6px;
@@ -121,8 +125,8 @@ blockquote {
 }
 
 .main {
-    margin-top: 24px;
-    margin-bottom: 48px;
+    margin-top: 34px;
+    margin-bottom: 58px;
 }
 
 @media (min-width: 768px) {
