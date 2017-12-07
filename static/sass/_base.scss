@@ -33,6 +33,9 @@ html, body {
 p.footnote span.fa-heart {
 	animation: beat 0.95s ease-in-out infinite;
 }
+// p.footnote span.fa-coffee {
+	// animation: beat 0.95s ease-in-out infinite;
+// }
 /* CSS Animation */
 @-moz-keyframes beat {
     to { -moz-transform: scale(1.2,1.2); }
