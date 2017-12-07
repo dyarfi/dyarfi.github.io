@@ -155,7 +155,16 @@ var IOTAGENT = IOTAGENT || {};
 		searchForm:function() {
 			/* Search Form */
 			$('a.search-link').click(function() {
-				$('#iot-search-form').toggleClass('d-none fixed-top').find('input[type=text]').focus();
+				$('#iot-search-form')
+				.removeClass('d-none')
+				.addClass('fixed-top')
+				.find('input[type=text]')
+				.focus();
+			});
+			$('#iot-search-form input').blur(function() {
+				$("#iot-search-form")
+				.removeClass('fixed-top')
+				.addClass('d-none');
 			});
 		}
 	};
