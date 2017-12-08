@@ -20,7 +20,7 @@
 <!-- Theme Switcher for this template -->
 <link href="assets/css/switcher.css" rel="stylesheet">
 
-</head>
+<script src="http://127.0.0.1:35729/livereload.js"></script></head>
 <body id="health-default">
     
     <div class="option">
@@ -123,7 +123,7 @@
 <nav class="navbar navbar-expand-md justify-content-between top-navigation" role="navigation">
     <div class="logo col-3 col-lg-3 col-md-5 col-sm-3">
         <a href="index.html" class="navbar-brand">
-            <img class="" src="assets/images/logo.png" alt="KlikDokter.Com"/>
+            <img class="" alt="Brand Logo" src="assets/images/logo.png" alt="KlikDokter.Com"/>
         </a>
     </div>	       
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarCollapseMain" aria-expanded="false" aria-label="Toggle navigation">
@@ -133,7 +133,7 @@
         <div class="col">	
             <div class="row justify-content-end">                    
                 <div class="col-auto col-lg-4 col-md-12 col-sm-auto mr-2">
-                    <form class="form-inline" role="search" action="search.html">
+                    <form class="form-inline" action="search.html" method="GET">
                         <div class="form-row">
                             <div class="input-group">
                                 <span class="input-group-btn">
@@ -148,9 +148,9 @@
                                         <li><a class="dropdown-item" href="index.html">Logout</a></li>
                                     </ul>
                                 </span>
-                                <input type="text" class="form-control col-auto" placeholder="Search.." aria-label="Search">
+                                <input type="text" class="form-control col-auto" placeholder="Search.." name="query" aria-label="Search">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-primary" type="button"><span class="fa fa-search"></span></button>
+                                    <button class="btn btn-primary" type="submit"><span class="fa fa-search"></span></button>
                                 </span>
                             </div>
                         </div>
@@ -213,7 +213,7 @@
         </div>
     </div>	
 </nav>
-        <main role="main" id="content">
+        <main id="content">
             <div class="container py-5" id="health-account">
     <div class="d-flex justify-content-center health-form-handler" id="health-account-login">
         <div class="col-12 col-lg-4 col-md-8 col-sm-8 text-center bg-light pb-2 mt-4">
@@ -350,7 +350,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
         <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Health Tools</h4>
+            <h4 class="modal-title" id="myModalLabel1">Health Tools</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>            
         </div>
         <div class="modal-body">
@@ -370,7 +370,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
         <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">First Aid</h4>
+            <h4 class="modal-title" id="myModalLabel2">First Aid</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>            
         </div>
         <div class="modal-body">
@@ -390,7 +390,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Live Chat</h4>
+                <h4 class="modal-title" id="myModalLabel3">Live Chat</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>            
             </div>
             <div class="modal-body">
@@ -414,12 +414,12 @@
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="assets/js/vendor/popper.min.js"></script>
 <script src="assets/js/bootstrap/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
 <script src="assets/js/vendor/holder.min.js"></script>
 <script src="assets/js/vendor/jRespond.js"></script>
 <script src="assets/js/function.js"></script>
-<script type="text/javascript" src="assets/js/scripts.js"></script>
+<script src="assets/js/scripts.js"></script>
 <!-- Javascript theme switcher! -->
 <script src="assets/js/switcher.js"></script>
 
