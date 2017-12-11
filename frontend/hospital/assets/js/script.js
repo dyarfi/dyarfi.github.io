@@ -173,14 +173,25 @@ var HOSPITAL = HOSPITAL || {};
 				// Item Content				
 				var itemContent = $(obj).find('.owl-caption > p').addClass('d-none');
 			});
-		}/*,
+		},
+
 		wayPoints:function () {
-			var waypoints = $('#box-waypoint-handler').waypoint({
-				handler: function(direction) {
-					$('.box-waypoint').addClass('animated fadeInDown');
-				}
-			})
-		}*/	
+			$(".box-waypoint").each(function(index, element) {
+				var $this = $(this);					
+				var $delay = $(this).data('delay');
+					setTimeout(function() {
+						$this.waypoint(function(direction) {
+							if (direction === 'down') {
+								$(this.element).removeClass('animated fadeOutDown').addClass('animated fadeInUp');			
+							} else {
+								$(this.element).removeClass('animated fadeInUp').addClass('animated fadeOutDown');
+							}
+						}, {
+						offset: '55%',
+					});			
+				}, $delay);
+			});
+		}
 	};
 
 	HOSPITAL.documentOnReady = {
