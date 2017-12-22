@@ -25,7 +25,7 @@
     <!-- <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
     <!-- Custom styles for this template -->
     <link href="assets/css/custom.css" rel="stylesheet">
-    <script src="http://127.0.0.1:35729/livereload.js"></script></head>
+    </head>
     <body>
     <div class="container">             
         <header class="masthead">
@@ -35,7 +35,7 @@
             <a href="index.html"><img class="img-fluid" alt="Brand Logo" src="assets/img/brand-logo-sm.png"></a>
         </div>
         <div class="d-flex col-6 col-lg-3 col-md-4 col-sm-6">
-            <a href="account.html" class="btn btn-default btn-md">
+            <a href="profile.html" class="btn btn-default btn-md">
                 <span class="fa fa-user-circle fa-2x"></span>
             </a>
             <form class="form-inline" action="search.html">
@@ -77,8 +77,8 @@
                 <a class="nav-link dropdown-toggle" href="javascript:;" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Internal</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown02">
                     <a class="dropdown-item" href="schedules.html">Doctor Schedules</a>
-                    <a class="dropdown-item" href="#">Health Monitor App</a>
-                    <a class="dropdown-item" href="#">Health Consultations</a>
+                    <a class="dropdown-item" href="monitor.html">Health Monitor App</a>
+                    <a class="dropdown-item" href="consultation.html">Health Consultations</a>
                 </div>
             </li>
         </ul>
@@ -89,20 +89,27 @@
     <div class="container">
         <h4 class="row text-primary header">Contact us for information.</h4>
         <div class="row">
-            <div class="col-9 col-lg-9 col-md-9 col-sm-9 m-0 p-0">
-                <img class="img-fluid" src="" data-src="holder.js/320px220?theme=thumb" alt="Map"/>
+            <div class="col-md-9 m-0 p-0">
+                <!-- <img class="img-fluid" src="" data-src="holder.js/320px220?theme=thumb" alt="Map"/> -->
+                <div class="embed-responsive embed-responsive-21by9 mb-3">
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7228.687998810916!2d-73.57371572879505!3d45.49771427779953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a6802ef36ff%3A0x112f006b9aeff7ae!2sCentre+Bell!5e0!3m2!1sen!2sid!4v1513762755854" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
             </div>
-            <div class="col-3 col-lg-3 col-md-3 col-sm-3 m-0 pr-0">
+            <div class="col-md-3 m-0 pr-0">
                 <fieldset>
                     <legend><h5>Main Address</h5></legend>
-                    <address>Mega Constructed Env, 34b Leaf Tea Road. Los Alamos.</address>
+                    <address><b class="clearfix">Centre Bell</b> 1909 Avenue des Canadiens-de-Montréal, Montréal, QC H4B 5G0, Canada</address>
+                    <p>
+                        <span><span class="fa fa-phone"></span> <a href="tel:9-000-999-0099">9-000-999-0099</a></span>
+                        <span><span class="fa fa-fax"></span> <a href="tel:9-000-999-0099">9-000-999-0099</a></span>
+                    </p>
                 </fieldset>      
             </div>                    
         </div>
         <h4 class="row text-primary header">Contact form.</h4>
         <div class="row">
-            <div class="col-12 col-lg-12 col-md-12 col-sm-12">
-                <form class="form-hospital my-4">
+            <div class="col-md-12">
+                <form class="form-hospital">
                     <div class="form-group">
                         <label for="HospitalName">Name</label>
                         <input type="text" name="name" class="form-control" id="HospitalName" placeholder="Name">                            
@@ -118,7 +125,7 @@
                         <label for="HospitalPhoneNumber">Phone Number</label>
                         <input type="text" name="phone_number" class="form-control" id="HospitalPhoneNumber" placeholder="Phone Number">                        
                         <label for="HospitalMessage">Message</label>
-                        <textarea name="message" class="form-control" id="HospitalMessage" placeholder="Message"></textarea>
+                        <textarea name="message" class="form-control" id="HospitalMessage" placeholder="Message" rows="6"></textarea>
                         <div class="input-group py-2">
                             <button class="btn btn-primary btn-md"><i class="fa fa-check" aria-hidden="true"></i> Submit</button>
                         </div>
@@ -127,8 +134,7 @@
             </div>
         </div>
     </div>
-</main>
-    
+</main>    
         <footer class="footer">
     <div class="row">
         <div class="col-lg-12">

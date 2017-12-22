@@ -13,6 +13,7 @@ var HOSPITAL = HOSPITAL || {};
 			HOSPITAL.initialize.responsiveClasses();		
 			HOSPITAL.initialize.holderThumb();	
 			//HOSPITAL.initialize.carouselTabs();	
+			HOSPITAL.initialize.toolTips();
 			HOSPITAL.initialize.owlCarousel();
 			HOSPITAL.initialize.wayPoints();
 			// HOSPITAL.initialize.imagePreload( '.portfolio-item:not(:has(.fslider)) img' );
@@ -114,6 +115,10 @@ var HOSPITAL = HOSPITAL || {};
 				fg: '#eceeef',
 				text: 'Thumbnail'
 			});
+		},
+
+		toolTips : function () {
+			$('[data-toggle="tooltip"]').tooltip();
 		},
 		/*
 		carouselTabs : function () {
