@@ -91,7 +91,7 @@ $(document).ready(function() {
                                 html += '<p class="card-text">'+item.description+'</p><ul class="list-inline">';                        
                                 html += '<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-tag"></span> '+item.category+'</a></li>';
                                 html += '<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-money-bill-alt"></span> $ '+item.price+'</a></li>';
-                                html += '<li class="list-inline-item"><a href="'+item.link+'" class="list-item"><span class="fa fa-cart-plus"></span> Buy</a></li>';                                    
+                                html += '<li class="list-inline-item"><a href="'+item.link+'" class="list-item" target="_blank"><span class="fa fa-cart-plus"></span> Buy</a></li>';                                    
                                 html += '</ul></div></div>';
                             });
                             setTimeout(function(){
