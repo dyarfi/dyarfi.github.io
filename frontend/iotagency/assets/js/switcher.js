@@ -149,3 +149,27 @@ $('.static-header').click(function() {
     $('#iot-header').removeClass('fixed-top').addClass('static-top');
     $('#wrapper').addClass('static');
 });
+var desktop = $('.preview-desktop');
+var mobile = $('.preview-mobile');
+/*
+if ($('html').hasClass('pmobile')) {
+    desktop.removeClass('active-switcher-btn');
+    mobile.addClass('active-switcher-btn');
+} else {
+    desktop.addClass('active-switcher-btn');
+    mobile.removeClass('active-switcher-btn');
+}
+*/
+desktop.click(function () {
+    //'use strict';
+    $(this).addClass('active-switcher-btn');
+    mobile.removeClass('active-switcher-btn');
+    $('html').removeClass('pmobile');
+    
+});
+mobile.click(function () {
+    //'use strict';
+    $(this).addClass('active-switcher-btn');
+    desktop.removeClass('active-switcher-btn');
+    $('html').addClass('pmobile');
+});

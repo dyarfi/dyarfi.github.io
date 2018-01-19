@@ -75,7 +75,7 @@ $(document).ready(function() {
     // });
     var waypoints = $('.waypoint-handler').waypoint(function(direction) {
             // Add Loader
-            this.element.innerHTML = '<div class="spinner"></div>';
+            this.element.innerHTML = '<div class="spinner scaleout"></div>';
             // Get Column
             var columns = $('.card-columns');
             if (columns.hasClass('json-end') == false) {
