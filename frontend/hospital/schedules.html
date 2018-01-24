@@ -34,14 +34,14 @@
             <h3 class="text-success sr-only"><a href="index.html"><span class="text-danger">+</span> hospital</a></h3>
             <a href="index.html"><img class="img-fluid" alt="Brand Logo" src="assets/img/brand-logo-sm.png"></a>
         </div>
-        <div class="d-flex col-6 col-lg-3 col-md-4 col-sm-6">
-            <a href="profile.html" class="btn btn-default btn-md">
+        <div class="d-flex justify-content-end col-6 col-lg-3 col-md-4 col-sm-6">
+            <a href="profile.html" class="align-self-center mr-1 mt-1">
                 <span class="fa fa-user-circle fa-2x"></span>
             </a>
             <form class="form-inline" action="search.html">
                 <label class="sr-only" for="search-bar">Search</label>
                 <div class="input-group mb-0 mb-sm-0">
-                    <div class="input-group-addon"><span class="fa fa-search"></span></div>
+                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div>
                     <input type="text" class="form-control col-auto pl-1" id="search-bar" placeholder="Search">
                 </div>
             </form>
@@ -63,11 +63,11 @@
                 <a class="nav-link" href="services.html">Services</a>
             </li>
             <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="facilities.html" href="javascript:;" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Facilities</a>
+                <a class="nav-link dropdown-toggle" href="facilities.html" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Facilities</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="products.html">Products</a>
-                    <a class="dropdown-item" href="rates.html">Rates</a>
-                    <a class="dropdown-item" href="insurances.html">Insurances and Company</a>
+                    <a class="dropdown-item " href="products.html">Products</a>
+                    <a class="dropdown-item " href="rates.html">Rates</a>
+                    <a class="dropdown-item " href="insurances.html">Insurances and Company</a>
                 </div>
             </li>
             <li class="nav-item ">
@@ -76,9 +76,10 @@
             <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle" href="javascript:;" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Internal</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown02">
-                    <a class="dropdown-item" href="schedules.html">Doctor Schedules</a>
-                    <a class="dropdown-item" href="monitor.html">Health Monitor App</a>
-                    <a class="dropdown-item" href="consultation.html">Health Consultations</a>
+                    <a class="dropdown-item active" href="schedules.html">Doctor Schedules</a>
+                    <a class="dropdown-item " href="monitor.html">Health Monitor App</a>                    
+                    <a class="dropdown-item " href="join_doctor.html">Join Doctors</a>                    
+                    <a class="dropdown-item " href="consultation.html">Consultations</a>
                 </div>
             </li>
         </ul>
@@ -94,48 +95,94 @@
         </div> 
         <div class="row">
             <div class="col-sm-12">
-                <form class="form-hospital p-4 bg-warning">
-                    <div class="form-group">
-                        <label for="HospitalBranch">Branch</label>
-                        <select name="branch" id="HospitalBranch" class="form-control">
-                            <option value="">Branch One</option>
-                            <option value="">Branch Two</option>
-                            <option value="">Branch Three</option>
-                            <option value="">Branch Four</option>
-                            <option value="">Branch Five</option>
-                            <option value="">Branch Six</option>
-                            <option value="">Branch Seven</option>
-                            <option value="">Branch Eight</option>
-                            <option value="">Branch Nine</option>
-                            <option value="">Branch Ten</option>
-                            <option value="">Branch Eleven</option>
-                            <option value="">Branch Twelve</option>
-                        </select>                                   
-                        <label for="HospitalSpecialization">Specialization</label>
-                        <select name="specialization" id="HospitalSpecialization" class="form-control">
-                            <option value="">Specialization One</option>
-                            <option value="">Specialization Two</option>
-                            <option value="">Specialization Three</option>
-                            <option value="">Specialization Four</option>
-                            <option value="">Specialization Five</option>
-                            <option value="">Specialization Six</option>
-                            <option value="">Specialization Seven</option>
-                            <option value="">Specialization Eight</option>
-                            <option value="">Specialization Nine</option>
-                            <option value="">Specialization Ten</option>
-                            <option value="">Specialization Eleven</option>
-                            <option value="">Specialization Twelve</option>
-                        </select>
-                        <label for="HospitalDoctor">Doctor</label>
-                        <input type="text" name="doctor" class="form-control" id="HospitalDoctor" placeholder="Doctor">
-                        <div class="input-group py-2">
-                            <button class="btn btn-primary btn-md"><i class="fa fa-search" aria-hidden="true"></i>  Search</button>
+                <div class="row">
+                    <form class="col form-hospital p-4 bg-warning">
+                        <div class="form-group">
+                            <label for="HospitalBranch">Branch</label>
+                            <select name="branch" id="HospitalBranch" class="form-control">
+                                <option value="">Branch One</option>
+                                <option value="">Branch Two</option>
+                                <option value="">Branch Three</option>
+                                <option value="">Branch Four</option>
+                                <option value="">Branch Five</option>
+                                <option value="">Branch Six</option>
+                                <option value="">Branch Seven</option>
+                                <option value="">Branch Eight</option>
+                                <option value="">Branch Nine</option>
+                                <option value="">Branch Ten</option>
+                                <option value="">Branch Eleven</option>
+                                <option value="">Branch Twelve</option>
+                            </select>                                   
+                            <label for="HospitalSpecialization">Specialization</label>
+                            <select name="doctor-category" class="form-control" id="HospitalSpecialization">
+                                <option selected="" value="">Any Category</option>
+                                <option value="allergy-immunology">Allergy &amp; Immunology</option>
+                                <option value="anesthesiology">Anesthesiology</option>
+                                <option value="audiology">Audiology</option>
+                                <option value="cardiology">Cardiology</option>
+                                <option value="cardiothoracic-surgery">Cardiothoracic Surgery</option>
+                                <option value="cardiovascular-surgery">Cardiovascular Surgery</option>
+                                <option value="clinical-research-physician">Clinical Research Physician</option>
+                                <option value="colon-rectal-surgery">Colon &amp; Rectal Surgery</option>
+                                <option value="dentistry">Dentistry</option>
+                                <option value="dermatology">Dermatology</option>
+                                <option value="diagnostic-radiology">Diagnostic Radiology</option>
+                                <option value="emergency-medicine">Emergency Medicine</option>
+                                <option value="endocrinology">Endocrinology</option>
+                                <option value="family-medicine">Family Medicine</option>
+                                <option value="gastroenterology">Gastroenterology</option>
+                                <option value="general-and-vascular-surgery">General and Vascular Surgery</option>
+                                <option value="general-surgery">General Surgery</option>
+                                <option value="gynecologic-oncology">Gynecologic Oncology</option>
+                                <option value="hospice-palliative-medicine">Hospice &amp; Palliative Medicine</option>
+                                <option value="infectious-disease">Infectious Disease</option>
+                                <option value="internal-medicine">Internal Medicine</option>
+                                <option value="interventional-neuroradiology">Interventional Neuroradiology</option>
+                                <option value="interventional-radiology">Interventional Radiology</option>
+                                <option value="neonatology">Neonatology</option>
+                                <option value="nephrology">Nephrology</option>
+                                <option value="neurological-surgery">Neurological Surgery</option>
+                                <option value="neurology">Neurology</option>
+                                <option value="neurophysiologic-intraoperative-monitoring">Neurophysiologic Intraoperative Monitoring</option>
+                                <option value="neuroradiology">Neuroradiology</option>
+                                <option value="nuclear-medicine">Nuclear Medicine</option>
+                                <option value="obstetrics-gynecology">Obstetrics &amp; Gynecology</option>
+                                <option value="oncology">Oncology</option>
+                                <option value="ophthalmology">Ophthalmology</option>
+                                <option value="oral-maxillofacial-surgery">Oral &amp; Maxillofacial Surgery</option>
+                                <option value="orthopedic-surgery">Orthopedic Surgery</option>
+                                <option value="otolaryngology">Otolaryngology</option>
+                                <option value="pain-medicine">Pain Medicine</option>
+                                <option value="pathology-anatomic">Pathology - Anatomic</option>
+                                <option value="pediatric-cardiology">Pediatric Cardiology</option>
+                                <option value="pediatric-ophthalmology">Pediatric Ophthalmology</option>
+                                <option value="pediatrics">Pediatrics</option>
+                                <option value="physical-medicine-rehab">Physical Medicine &amp; Rehab</option>
+                                <option value="plastic-surgery">Plastic Surgery</option>
+                                <option value="podiatric-surgery">Podiatric Surgery</option>
+                                <option value="primary-care">Primary Care</option>
+                                <option value="psychiatry">Psychiatry</option>
+                                <option value="pulmonary">Pulmonary</option>
+                                <option value="radiation-oncology">Radiation Oncology</option>
+                                <option value="reproductive-endocrinology-infertility">Reproductive Endocrinology &amp; Infertility</option>
+                                <option value="rheumatology">Rheumatology</option>
+                                <option value="teleradiography">Teleradiography</option>
+                                <option value="thoracic-surgery">Thoracic Surgery</option>
+                                <option value="urology">Urology</option>
+                                <option value="vascular-surgery">Vascular Surgery</option>
+                                <option value="wound-care">Wound Care</option>
+                            </select>
+                            <label for="HospitalDoctor">Doctor</label>
+                            <input type="text" name="doctor" class="form-control" id="HospitalDoctor" placeholder="Doctor">
+                            <div class="input-group py-2">
+                                <button class="btn btn-primary btn-md"><i class="fa fa-search" aria-hidden="true"></i>  Search</button>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
             <div class="col-sm-12 my-5">
-                <div class="row-fluid">
+                <div class="row">
                     <h5><span class="fa fa-bars text-warning"></span> &nbsp; Schedule List</h5>
                     <div class="table-responsive">
                         <table class="table table-striped">
@@ -273,7 +320,15 @@
         <footer class="footer">
     <div class="row">
         <div class="col-lg-12">
-
+            <div class="text-center">
+                <ul class="list-inline footer-navbar">
+                    <li class="list-inline-item"><a href="join_doctor.html" class="">Join Doctors</a></li>
+                    <li class="list-inline-item"><a href="doctor_search.html" class="">Doctor Search</a></li>
+                    <li class="list-inline-item"><a href="aboutus.html" class="">About</a></li>
+                    <li class="list-inline-item"><a href="consultation.html" class="">Consultations</a></li>
+                    <li class="list-inline-item"><a href="articles.html" class="">Articles</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="container my-4 p-0">
@@ -285,7 +340,6 @@
             <li><a href="#"><i class="fab fa-google-plus"></i></a></li> 
         </ul>   
         <p class="text-center font-weight-light py-2 text-muted">Copyrights &copy; 2017. All rights reserved. Template Theme for &plus; Hospital websites. <br> <a href="terms.html" class="small">Terms and Policy</a></p>
-        
     </div>
 </footer>
     </div><!-- /.container -->

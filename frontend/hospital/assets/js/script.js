@@ -144,6 +144,34 @@ var HOSPITAL = HOSPITAL || {};
 		},
 		*/
 		owlCarousel : function() {			
+			var owl1 = $('.partnership-carousel').owlCarousel({
+                animateOut:'fadeOut',
+				animateIn:'fadeIn',
+				items:6,
+				autoplay:1,
+				loop:1,
+				margin:30,
+				lazyLoad:1,
+                stagePadding:0,
+				smartSpeed:350,
+				responsive : {
+					// breakpoint from 0 up
+					0 : {
+						items:2
+					},
+					// breakpoint from 480 up
+					480 : {
+						items:3
+					},
+					// breakpoint from 768 up
+					768 : {
+						items:4
+					},
+					1000:{
+						items:6
+					}
+				}
+			});
 			var owl = $('.main-carousel').owlCarousel({
                 animateOut:'fadeOut',
 				animateIn:'fadeIn',
@@ -189,7 +217,7 @@ var HOSPITAL = HOSPITAL || {};
 							if (direction === 'down') {
 								$(this.element).removeClass('animated fadeOutDown').addClass('animated fadeInUp');			
 							} else {
-								$(this.element).removeClass('animated fadeInUp').addClass('animated fadeOutDown');
+								// $(this.element).removeClass('animated fadeInUp').addClass('animated fadeOutDown');
 							}
 						}, {
 						offset: '55%',

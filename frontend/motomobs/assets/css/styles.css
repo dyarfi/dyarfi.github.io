@@ -11869,10 +11869,16 @@ pre > code {
   margin-bottom: 1rem;
   border-color: #495057;
 }
+#section-custom .card .card-title {
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
 #section-custom .card .card-body {
+  padding: .9rem;
   background: rgba(0, 0, 0, 0.8);
 }
 #section-custom .card .card-text {
+  margin: 0 auto .5rem auto;
   color: #868e96;
 }
 
