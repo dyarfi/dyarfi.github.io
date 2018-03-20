@@ -153,7 +153,9 @@ var IOTAGENT = IOTAGENT || {};
 		},
 
 		searchForm:function() {
+			
 			/* Search Form */
+			/*
 			$('a.search-link').click(function() {
 				$('#iot-search-form')
 				.removeClass('d-none')
@@ -166,6 +168,7 @@ var IOTAGENT = IOTAGENT || {};
 				.removeClass('fixed-top')
 				.addClass('d-none');
 			});
+			*/
 		}
 	};
 

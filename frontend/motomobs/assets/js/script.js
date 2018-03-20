@@ -2,7 +2,8 @@ $(document).ready(function() {
     //$('.carousel').on('slide.bs.carousel', function () {
 		//$(this).find('.carousel-caption').css({'bottom':'90px'});
 		//$(this).fadeOut(250).fadeIn(250);
-	//});
+    //});
+    baguetteBox.run('.tz-gallery',{animation:'fadeIn'});
 /* ==============================================
     Preloader
     =============================================== */

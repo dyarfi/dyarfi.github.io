@@ -14,6 +14,7 @@
 <!-- Jekyll | compiled -->    
 <!-- <link href="" id="option_color"> -->
 <link href="assets/css/styles.css" rel="stylesheet" id="option_color">
+<link href="assets/css/imagehover.css" rel="stylesheet">
 <!-- Custom styles for this template -->
 <link href="assets/css/custom.css" rel="stylesheet">
 <!-- Theme Switcher for this template -->
@@ -135,7 +136,25 @@
     </div>
 </div>
     <div id="wrapper">
-        <header class="fixed-top" id="iot-header">
+        <div class="overlay overlay-hugeinc" id="overlay-search">
+    <button type="button" class="overlay-close font-weight-light" onclick="$('#overlay-search').removeClass('open');"><span class="fa fa-times-circle fa-3x"></span></button>
+    <div class="navbar-search">
+        <ul class="list-inline col-lg-12">
+            <li class="list-inline-item">
+                <form class="form-inline container" id="form-search" action="search.html">
+                    <div class="col-lg-12">
+                        <label class="sr-only" for="search-bar">Search</label>
+                        <div class="input-group input-group-lg mb-0 mb-sm-0">
+                            <div class="input-group-append"><span class="input-group-text"><i class="fa fa-search"></i></span></div>
+                            <input type="text" class="form-control" name="query" id="search-bar" placeholder="Type and hit Enter..">
+                        </div>
+                    </div>	
+                </form>
+            </li>
+        </ul>
+    </div>
+</div>
+<header class="fixed-top" id="iot-header">
     <nav class="navbar navbar-expand justify-content-xl-end justify-content-lg-end justify-content-md-end navbar-light bg-light iot-navbar">
         <div class="text-right">                    
             <ul class="navbar-nav">
@@ -152,13 +171,13 @@
                     <a class="nav-link" href="#">Community</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link search-link" href="#">
+                    <a class="nav-link search-link" href="#" id="trigger-overlay" onclick="$('#overlay-search').toggleClass('open');$('#form-search input[type=text]').focus();">
                         <span class="fa fa-search"></span><span class="sr-only">search</span>                        
                     </a>
                     <form class="d-none" id="iot-search-form" action="search.html">
                         <label class="sr-only" for="search-bar">Search</label>
                         <div class="input-group mb-0 mb-sm-0">
-                            <div class="input-group-addon"><span class="fa fa-search"></span></div>
+                            <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div>
                             <input type="text" class="form-control" name="query" id="search-bar" placeholder="Type and Hit Enter to Search">
                         </div>
                     </form>
@@ -252,12 +271,12 @@
         <!-- FOOTER -->
 <footer class="container text-muted" id="footer">
     <p class="float-right"><a href="#" id="gotoTop">Back to top</a></p>
-    <p> &copy; 2017 Iot Agent Theme, Inc. Template for IoT Agent websites. &middot; <a href="terms.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
+    <p> &copy; 2017 Iot Agent Theme, Inc. Template for IoT Agent websites. <a href="contact.html">Contact</a> &middot; <a href="terms.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="careers.html">Careers</a></p>
     <ul class="nav p-0 m-0">
-        <li class="nav-item"><a href="#" class="text-info btn-social"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
-        <li class="nav-item"><a href="#" class="text-primary btn-social"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
-        <li class="nav-item"><a href="#" class="text-warning btn-social"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-        <li class="nav-item"><a href="#" class="text-danger btn-social"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a></li>
+        <li class="nav-item"><a href="#" class="text-info btn-social"><i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+        <li class="nav-item"><a href="#" class="text-primary btn-social"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+        <li class="nav-item"><a href="#" class="text-warning btn-social"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+        <li class="nav-item"><a href="#" class="text-danger btn-social"><i class="fab fa-youtube-square fa-2x" aria-hidden="true"></i></a></li>
     </ul>
 </footer>
         </main>
