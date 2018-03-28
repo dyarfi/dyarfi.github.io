@@ -86,7 +86,7 @@ $(document).ready(function() {
                         if (status == "success") {
                             var html = '';
                             $.each(items, function(i,item) {
-                                html += '<div class="card"><img class="card-img-top img-fluid" src="assets/img/'+item.image+'" data-src="holder.js/227x160/auto" alt="Card image cap">';
+                                html += '<div class="card"><img class="card-img-top img-fluid ilist-c" src="assets/img/'+item.image+'" data-src="holder.js/227x160/auto" alt="Card image cap">';
                                 html += '<div class="card-body">';
                                 html += '<h5 class="card-title">'+item.title+'</h5>';
                                 html += '<p class="card-text">'+item.description+'</p><ul class="list-inline">';                        
