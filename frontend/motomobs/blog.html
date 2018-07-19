@@ -7,7 +7,12 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
     <title>Blog · Motomobs Theme Blog page Description. |</title>
-
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <!-- Webpack | compiled -->
@@ -15,16 +20,15 @@
 
     <!-- Main Stylesheet -->
     
-    <link rel="stylesheet" href="http://localhost:3000/main.css">
-    
-    
+    <!-- <link rel="stylesheet" href="/assets/styles.css"> -->
     <!-- Jekyll | compiled -->
-    <link href="./assets/css/imagehover.css" rel="stylesheet">    
-    <link href="./assets/css/owl.carousel/owl.carousel.min.css" rel="stylesheet">
-    <link href="./assets/css/owl.carousel/owl.theme.default.min.css" rel="stylesheet">
-    <link href="./assets/css/baguetteBox.min.css" rel="stylesheet">    
+    <!-- <link href="assets/css/imagehover.css" rel="stylesheet">     -->
+    <link href="assets/css/owl.carousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/css/baguetteBox.min.css" rel="stylesheet">    
     <!-- Jekyll | compiled -->
-    <link href="./assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    
 
     <!-- Custom styles for this template -->
     <!-- <link href="assets/css/custom.css" rel="stylesheet"> -->
@@ -38,87 +42,64 @@
 
 
     </head>
-<body>
-    <!-- Preload the Whole Page -->
-<div id="preloader">
-    <!-- <div id="loading-animation">&nbsp;</div> -->
-    <!--div class="spinner scaleout">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
-    </div-->
-    <div class="spinner double-bounce">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
+<body class="preloader">
+        <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner double-bounce">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
     </div>
-</div>
-    <div class="overlay overlay-hugeinc" id="overlay-navbar">
-    <button type="button" class="overlay-close font-weight-light" onclick="$('#overlay-navbar').removeClass('open');"><span class="fa fa-times-circle fa-3x"></span></button>
-    <div class="navbar-search">
-        <ul class="list-inline col-lg-12">
-            <li class="list-inline-item">
-                <form class="form-inline container" id="form-search" action="search.html">
-                    <div class="col-lg-12">
-                        <label class="sr-only" for="search-bar">Search</label>
-                        <div class="input-group input-group-lg mb-0 mb-sm-0">
-                            <div class="input-group-addon"><span class="fa fa-search"></span></div>
-                            <input type="text" class="form-control" name="query" id="search-bar" placeholder="Type and hit Enter..">
-                        </div>
-                    </div>	
-                </form>
-            </li>
-        </ul>
-    </div>
-</div>
     <div id="wrapper">    
-    <!-- Navigation -->
-<div class="bg-dark pt-3 pb-4" id="section-nav">
-    <div class="col-auto text-center m-2">
-        <a class="index.html" href="index.html"><img src="assets/img/brand-logo.png" class="img-fluid" alt="Brand Logo"><span class="sr-only">Home</span></a>
+    <header id="header">    
+        <!-- Navigation -->
+    <div class="bg-dark" id="section-nav">
+        <div class="col-auto text-center m-2">
+            <a class="index.html" href="index.html"><img src="assets/img/brand-logo.png" class="img-fluid" alt="Brand Logo"><span class="sr-only">Home</span></a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-2 mb-0">
+            <div class="container-fluid">
+                <!--a onclick="$('#overlay-navbar').toggleClass('open');" class="btn btn-outline-light btn-lg" data-target="#overlay-navbar" aria-controls="overlay-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </a-->
+                <div class="mx-auto m-2 p-2">
+                    <button class="navbar-toggler rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars text-white"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse border border-secondary border-left-0 border-right-0 p-2 mt-2" id="navbarResponsive">
+                    <ul class="navbar-nav nav-justified mx-auto justify-content-center">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="custom.html">Customs</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="garage.html">Garage</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>            
+                </div>
+            </div>
+        </nav>  
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-2 mb-0">
-        <!--a onclick="$('#overlay-navbar').toggleClass('open');" class="btn btn-outline-light btn-lg" data-target="#overlay-navbar" aria-controls="overlay-navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="fa fa-bars"></span>
-        </a-->
-        <div class="mx-auto m-2 p-2">
-            <button class="navbar-toggler rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fa fa-bars text-white"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse border border-secondary border-left-0 border-right-0 p-2 mt-2" id="navbarResponsive">
-            <ul class="navbar-nav nav-justified mx-auto justify-content-center">
-                <li class="nav-item ">
-                    <a class="nav-link" href="index.html">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="custom.html">Customs</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="garage.html">Garage</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>            
-        </div>
-    </nav>  
-</div>
-    <!-- Header - set the background image for the header in the line below -->
-<!--header class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1076');">
-    <img class="img-fluid d-block mx-auto" src="http://placehold.it/200x200&text=Logo" alt="">
-</header-->
+</header>
         <main id="content">
-            	<!-- Content section -->
+            	<!-- Content section Blog -->
 	<section class="section" id="section-blog">
 		<div class="container">
 			<div class="text-center overflow-hide"><h4 class="header-ams">Blog</h4></div>
@@ -128,9 +109,9 @@
                     <h1 class="blog-title">Blog Posts</h1>
                     <p class="lead blog-description">This is a page for developers to share their project and knowledge.</p>
                 </div>
-            </div>   
+            </div>
             <div class="row">
-                <div class="col-md-8 blog-main">                    
+                <div class="col-md-8 blog-main">
                     <div class="row-fluid">
                         <div class="blog-post">
                             <h3 class="blog-post-title">How to develop a connecting devices in your office cubicles</h3>
@@ -242,7 +223,7 @@
                                 <div class="card">
                                     <a href="blog_detail.html"><img class="card-img-top img-fluid ilist-c" src="assets/img/custom1.jpg" data-src="holder.js/260x180/auto" alt="Card image cap"></a>
                                     <div class="card-body">
-                                        <h4 class="card-title">Connecting your first Arduino</h4>
+                                        <h4 class="card-title"><a href="blog_detail.html">Connecting your first Arduino</a></h4>
                                         <p class="card-text">This post will describe how to connect your first Arduino. After that we will connect the starter kit sensors..</p>
                                         <small class="text-muted"><span class="fa fa-clock"></span> Last updated 3 mins ago</small>
                                     </div>
@@ -252,7 +233,7 @@
                                 <div class="card">
                                     <a href="blog_detail.html"><img class="card-img-top img-fluid ilist-c" src="assets/img/custom2.jpg" data-src="holder.js/260x180/auto" alt="Card image cap"></a>
                                     <div class="card-body">
-                                        <h4 class="card-title">Raspberry Pi 3 Components</h4>
+                                        <h4 class="card-title"><a href="blog_detail.html">Raspberry Pi 3 Components</a></h4>
                                         <p class="card-text">The Raspberry Pi is a series of small single-board computers developed in the United Kingdom by the Raspberry Pi..</p>
                                         <small class="text-muted"><span class="fa fa-clock"></span> Last updated 3 mins ago</small>
                                     </div>
@@ -262,7 +243,7 @@
                                 <div class="card">
                                     <a href="blog_detail.html"><img class="card-img-top img-fluid ilist-c" src="assets/img/custom3.jpg" data-src="holder.js/260x180/auto" alt="Card image cap"></a>
                                     <div class="card-body">
-                                        <h4 class="card-title">Pinout for Infrared Sensors</h4>
+                                        <h4 class="card-title"><a href="blog_detail.html">Pinout for Infrared Sensors</a></h4>
                                         <p class="card-text">A passive infrared sensor (PIR sensor) is an electronic sensor that measures infrared (IR) light radiating from..</p>
                                         <small class="text-muted"><span class="fa fa-clock"></span> Last updated 3 mins ago</small>
                                     </div>
@@ -272,7 +253,7 @@
                                 <div class="card">
                                     <a href="blog_detail.html"><img class="card-img-top img-fluid ilist-c" src="assets/img/custom4.jpg" data-src="holder.js/260x180/auto" alt="Card image cap"></a>
                                     <div class="card-body">
-                                        <h4 class="card-title">Dashboard for your Sensors</h4>
+                                        <h4 class="card-title"><a href="blog_detail.html">Dashboard for your Sensors</a></h4>
                                         <p class="card-text">Use the REST and MQTT APIs to update ThingSpeak channels and to chart numeric data stored..</p>
                                         <small class="text-muted"><span class="fa fa-clock"></span> Last updated 3 mins ago</small>
                                     </div>
@@ -287,48 +268,53 @@
         </main>
     <!-- Footer -->
 <footer class="pb-2 pt-4 bg-dark" id="footer">
-    <div class="d-flex justify-content-between py-3">
-        <div class="col col-sm-9">
-            <div class="row">
-                <div class="col">
-                    <ul class="nav flex-column m-2">
-                        <li class="nav-item"><a href="about.html" class="list-item ">About Us</a></li>
-                        <li class="nav-item"><a href="services.html" class="list-item ">Services</a></li>                        
-                        <li class="nav-item"><a href="custom.html" class="list-item ">Custom</a></li>
-                        <li class="nav-item"><a href="garage.html" class="list-item ">Garage</a></li>
-                        <li class="nav-item"><a href="gallery.html" class="list-item ">Gallery</a></li>                        
-                        <li class="nav-item"><a href="contact.html" class="list-item ">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul class="nav flex-column m-2">
-                        <li class="nav-item"><a href="blog.html" class="list-item active">Blog</a></li>
-                        <li class="nav-item"><a href="custom_detail.html" class="list-item ">Custom Detail</a></li>                        
-                        <li class="nav-item"><a href="wearable.html" class="list-item ">Wearables</a></li>                        
-                        <li class="nav-item"><a href="samples.html" class="list-item ">Samples</a></li>
-                        <li class="nav-item"><a href="contact.html" class="list-item ">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col">
+    <div class="container">
+        <div class="d-flex justify-content-between py-3">
+            <div class="col col-sm-9">
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav flex-column m-2">
+                            <li class="nav-item"><a href="about.html" class="list-item ">About Us</a></li>
+                            <li class="nav-item"><a href="services.html" class="list-item ">Services</a></li>                        
+                            <li class="nav-item"><a href="custom.html" class="list-item ">Custom</a></li>
+                            <li class="nav-item"><a href="garage.html" class="list-item ">Garage</a></li>
+                            <li class="nav-item"><a href="gallery.html" class="list-item ">Gallery</a></li>                        
+                            <li class="nav-item"><a href="contact.html" class="list-item ">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="nav flex-column m-2">
+                            <li class="nav-item"><a href="blog.html" class="list-item active">Blog</a></li>
+                            <li class="nav-item"><a href="custom_detail.html" class="list-item ">Custom Detail</a></li>                        
+                            <li class="nav-item"><a href="wearable.html" class="list-item ">Wearables</a></li>                        
+                            <li class="nav-item"><a href="booking.html" class="list-item ">Booking</a></li>
+                            <li class="nav-item"><a href="samples.html" class="list-item ">Samples</a></li>                            
+                        </ul>
+                    </div>
                     <div class="d-block bg-dark clearfix">
-                        <div class="container">
+                        <div class="container" id="newsletter">
                             <h6 class="m-0 p-0">Newsletter</h6>
-                            <form class="form-horizontal">
-                                <div class="form-row">
+                            <form class="form-inline">
+                                <div class="input-group">
                                     <label class="sr-only">Subscribe</label>
-                                    <input class="form-control form-control-sm" name="subscribe" value="" placeholder="email" type="text">
-                                    <button class="btn btn-outline-secondary btn-sm btn-block" type="submit" name="submit">SUBSCRIBE</button>
+                                    <div class="form-row m-0 p-0">
+                                        <input class="form-control form-control-sm col-8 col-md-6" name="subscribe" value="" placeholder="email" type="text">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary btn-sm" type="submit" name="submit">subscribe</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </form>
+                            <div class="text-muted small">Latest updates from our garage</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col col-sm-3 pt-2">
-            <div class="text-center">
-                <img alt="Brand Logo" class="img-fluid" src="assets/img/brand-logo.png" data-src="holder.js/300x120/thumb">
-                <div class="text-muted small pt-2">South Jakarta, Indonesia</div>
+            <div class="col col-md-3 pt-2">
+                <div class="text-center">
+                    <img alt="Brand Logo" class="img-fluid" src="./assets/img/brand-logo.png" data-src="holder.js/300x120/thumb">
+                    <div class="text-muted small pt-2">South Jakarta, Indonesia</div>
+                </div>
             </div>
         </div>
     </div>
@@ -345,7 +331,8 @@
 </div>
     </div>    
     <!-- Placed at the end of the document so the pages load faster -->
-    <script>window.jQuery || document.write('<script src="assets/js/jquery/jquery.min.js"><\/script>')</script>
+    <!-- <script>window.jQuery || document.write('<script src="./assets/js/jquery/jquery.min.js"><\/script>')</script> -->
+    
     <script src="assets/js/jquery/jquery.min.js"></script>
     <script src="assets/js/html5shiv.min.js"></script>
     <script src="assets/js/holder.min.js"></script>
@@ -354,14 +341,12 @@
     <script src="assets/js/jRespond.js"></script>
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <!-- <script src="assets/js/masonry.pkgd.min.js"></script> -->
-    <script src="assets/js/modernizr.custom.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/baguetteBox.min.js"></script>
-    <script src="assets/js/script.js"></script>
-
-    
-    <script src="http://localhost:3000/vendor.js"></script>
-    <script src="http://localhost:3000/main.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/main.js"></script>
         
 </body>
 

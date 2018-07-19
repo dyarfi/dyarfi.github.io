@@ -16,6 +16,9 @@ var HOSPITAL = HOSPITAL || {};
 			HOSPITAL.initialize.toolTips();
 			HOSPITAL.initialize.owlCarousel();
 			HOSPITAL.initialize.wayPoints();
+			HOSPITAL.initialize.datePicker();
+			HOSPITAL.initialize.bscomponents();
+			HOSPITAL.initialize.iconSamples();
 			// HOSPITAL.initialize.imagePreload( '.portfolio-item:not(:has(.fslider)) img' );
 			// HOSPITAL.initialize.stickyElements();
 			// HOSPITAL.initialize.goToTop();
@@ -151,13 +154,41 @@ var HOSPITAL = HOSPITAL || {};
 				autoplay:1,
 				loop:1,
 				margin:30,
-				lazyLoad:1,
+				lazyLoad:true,
                 stagePadding:0,
 				smartSpeed:350,
 				responsive : {
 					// breakpoint from 0 up
 					0 : {
 						items:2
+					},
+					// breakpoint from 480 up
+					480 : {
+						items:3
+					},
+					// breakpoint from 768 up
+					768 : {
+						items:4
+					},
+					1000:{
+						items:6
+					}
+				}
+			});
+			var owl2 = $('.rates-carousel').owlCarousel({
+                animateOut:'fadeOut',
+				animateIn:'fadeIn',
+				items:6,
+				autoplay:1,
+				loop:1,
+				margin:30,
+				lazyLoad:true,
+                stagePadding:0,
+				smartSpeed:350,
+				responsive : {
+					// breakpoint from 0 up
+					0 : {
+						items:1
 					},
 					// breakpoint from 480 up
 					480 : {
@@ -179,36 +210,89 @@ var HOSPITAL = HOSPITAL || {};
 				autoplay:1,
 				loop:1,
 				margin:30,
-				lazyLoad:1,
+				lazyLoad:true,
                 stagePadding:0,
                 smartSpeed:450
 			});
 						
 			owl.on('changed.owl.carousel', function(event) {
 				var obj = event.target;
+				// Item 
+				var item = $(obj).find('.owl-caption');
 				// Item Head
-				var itemHead = $(obj).find('.owl-caption > h1');
+				var itemHead = item.find('h1,h2,h3,h4');
 				// Item Content				
-				var itemContent = $(obj).find('.owl-caption > p');				
+				var itemContent = item.find('p');			
+				// Current Owl slide item				
+				item.eq(event.item.index)
+				.removeClass('d-none')
+				.addClass('animated fadeIn');
 				// Current Owl slide Heading 
 				itemHead.eq(event.item.index)
 				.removeClass('d-none')
 				.addClass('animated fadeInDown');
-				// Current Owl slide Content 				
+				// Current Owl slide Content
 				itemContent.eq(event.item.index)
 				.removeClass('d-none')
 				.addClass('animated fadeInUp');
 			});
 			owl.on('change.owl.carousel', function(event) {
 				var obj = event.target;
+				// Item 
+				var item = $(obj).find('.owl-caption').addClass('d-none');
 				// Item Head
-				var itemHead = $(obj).find('.owl-caption > h1').addClass('d-none');
+				var itemHead = item.find('.owl-caption > h1,h2,h3,h4').addClass('d-none');
 				// Item Content				
-				var itemContent = $(obj).find('.owl-caption > p').addClass('d-none');
+				var itemContent = item.find('.owl-caption > p').addClass('d-none');
+			});
+
+			var owlalt = $('.main-carousel-alt').owlCarousel({
+                animateOut:'fadeOut',
+				animateIn:'fadeIn',
+				items:1,
+				autoplay:1,
+				loop:1,
+				margin:30,
+				lazyLoad:true,
+                stagePadding:0,
+                smartSpeed:250,
+				dots:false,
+			});
+						
+			owlalt.on('changed.owl.carousel', function(event) {
+				var obj = event.target;
+				// Item 
+				var item = $(obj).find('.owl-caption');
+				// Item Head
+				var itemHead = item.find('h1,h2,h3,h4');
+				// Item Content				
+				var itemContent = item.find('p');			
+				// Current Owl slide item				
+				item.eq(event.item.index)
+				.removeClass('d-none')
+				.addClass('animated fadeIn');
+				// Current Owl slide Heading 
+				itemHead.eq(event.item.index)
+				.removeClass('d-none')
+				.addClass('animated fadeInDown');
+				// Current Owl slide Content
+				itemContent.eq(event.item.index)
+				.removeClass('d-none')
+				.addClass('animated fadeInUp');
+			});
+			owlalt.on('change.owl.carousel', function(event) {
+				var obj = event.target;
+				// Item 
+				var item = $(obj).find('.owl-caption').addClass('d-none');
+				// Item Head
+				var itemHead = item.find('.owl-caption > h1,h2,h3,h4').addClass('d-none');
+				// Item Content				
+				var itemContent = item.find('.owl-caption > p').addClass('d-none');
 			});
 		},
 
 		wayPoints:function () {
+			/*
 			$(".box-waypoint").each(function(index, element) {
 				var $this = $(this);					
 				var $delay = $(this).data('delay');
@@ -223,6 +307,37 @@ var HOSPITAL = HOSPITAL || {};
 						offset: '55%',
 					});			
 				}, $delay);
+			});
+			*/
+		},
+
+		datePicker:function () {
+			if (typeof $.fn.datepicker !== 'undefined') {
+				$('#datepicker-alt').datepicker({
+					uiLibrary: 'bootstrap4',
+					format: 'dd/mm/yyyy'
+				});
+			}
+		},
+
+		bscomponents: function() {
+			$('.bs-component [data-toggle="popover"]').popover();
+			$('.bs-component [data-toggle="tooltip"]').tooltip();		  
+		},
+		
+		iconSamples : function() {
+			// alert($( ".icons-samples button" ).length);
+			$( ".icons-samples button" ).each(function() {
+				var label = $( this ).find('span').attr('class');
+				$(this).click(function() {
+					$(this).parents().find('span.text-primary')
+				    .hide()
+				    .remove();
+
+				   	$(this).find('span')
+				   	.html('<span class="text-primary small align-text-top"> '+label+'<span>')
+				   	.show();
+				});
 			});
 		}
 	};

@@ -3,11 +3,10 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Account page | Hospital Theme Homepage Description.">
+    <meta name="description" content="Account page | Hospital &plus; Theme Account Page Description.">
     <meta name="author" content="">
-    <meta name="generator" content="Jekyll v3.6.2">
     <link rel="icon" href="favicon.ico">
-    <title>Account · Hospital Theme| Hospital Template from Bootstrap </title>
+    <title>Account · Hospital &plus; Theme  Hospital &plus; Theme</title>
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <!-- Animate.js -->    
@@ -15,39 +14,78 @@
     <!-- Owl.Carousel -->    
     <link href="assets/css/owl.carousel/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/css/owl.carousel/owl.theme.default.min.css" rel="stylesheet">
-    <!-- image hover effects -->    
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css" rel="stylesheet">     -->
+    <!-- Font Awesome 5 -->
+    <link href="assets/css/fontawesome/fontawesome.css" rel="stylesheet">    
+    <!-- Image Hover CSS -->
+    <link href="assets/css/imagehover/imagehover.css" rel="stylesheet">    
     <!-- Bootstrap core CSS -->
     <!-- Webpack | compiled -->
     <!--link href="assets/css/app.css" rel="stylesheet"-->
-    <!-- Jekyll | compiled -->    
+    <!-- Styles | compiled -->
+    
     <link href="assets/css/styles.css" rel="stylesheet">
-    <!-- <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    
+    
+    <!-- Specific page style :Start -->
+    <link href="assets/vendors/gijgo/css/gijgo.css" rel="stylesheet">
+    <!-- :End -->
+    
+    
     <!-- Custom styles for this template -->
     <link href="assets/css/custom.css" rel="stylesheet">
     </head>
     <body>
-    <div class="container">             
-        <header class="masthead">
-    <div class="row my-4">
-        <div class="col-6 col-lg-9 col-md-8 col-sm-6">
-            <h3 class="text-success sr-only"><a href="index.html"><span class="text-danger">+</span> hospital</a></h3>
-            <a href="index.html"><img class="img-fluid" alt="Brand Logo" src="assets/img/brand-logo-sm.png"></a>
-        </div>
-        <div class="d-flex justify-content-end col-6 col-lg-3 col-md-4 col-sm-6">
-            <a href="profile.html" class="align-self-center mr-1 mt-1">
-                <span class="fa fa-user-circle fa-2x"></span>
-            </a>
-            <form class="form-inline" action="search.html">
-                <label class="sr-only" for="search-bar">Search</label>
-                <div class="input-group mb-0 mb-sm-0">
-                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div>
-                    <input type="text" class="form-control col-auto pl-1" id="search-bar" placeholder="Search">
+    
+
+    <div id="wrapper">            
+        <div class="container">
+            
+<header class="">
+    <div class="container">
+        <div class="row d-flex justify-content-center justify-content-sm-between my-3">
+            <div class="row col-auto">
+                <div class="py-1 my-1">
+                    <h3 class="text-success sr-only"><a href="index.html"><span class="text-danger">+</span> hospital</a></h3>
+                    <a href="index.html"><img class="img-fluid" alt="Brand Logo" src="assets/img/brand-logo-sm.png"></a>
                 </div>
-            </form>
-        </div>
+            </div>
+            <div class="row col-auto">
+                <div class="d-flex mt-1 ml-2">
+                    <div class="container">
+                        <span class="text-muted mr-2">Call us :</span>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <i class="fa fa-phone text-danger"></i> <a href="tel:9-000-999-0099" class="text-primary">9-000-999-0099</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fa fa-fax text-danger"></i> <a href="tel:9-000-999-0099" class="text-primary">9-000-999-0099</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Hidden only on xs -->
+            <div class="row col-auto d-none d-sm-block">
+                <form class="form-inline py-1 my-1" action="search.html">
+                    <div class="form-row">
+                        <div class="col-auto align-self-center m-0">
+                            <a href="account.html">
+                                <span class="fa fa-user-circle fa-2x"></span>
+                            </a>
+                        </div>
+                        <div class="col-auto align-self-center m-0">
+                            <label class="sr-only" for="search-bar">Search</label>
+                            <div class="input-group mb-0 mb-sm-0">
+                                <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div>
+                                <input type="text" class="form-control col-auto pl-1" id="search-bar-navigation" placeholder="Search">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>            
     </div>
-    <nav class="navbar navbar-expand-md navbar-light bg-light mb-3">
+    <nav class="navbar navbar-expand-md navbar-light navbar-main">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -67,7 +105,7 @@
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
                     <a class="dropdown-item " href="products.html">Products</a>
                     <a class="dropdown-item " href="rates.html">Rates</a>
-                    <a class="dropdown-item " href="insurances.html">Insurances and Company</a>
+                    <a class="dropdown-item " href="insurances.html">Insurances</a>
                 </div>
             </li>
             <li class="nav-item ">
@@ -77,16 +115,41 @@
                 <a class="nav-link dropdown-toggle" href="javascript:;" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Internal</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown02">
                     <a class="dropdown-item " href="schedules.html">Doctor Schedules</a>
-                    <a class="dropdown-item " href="monitor.html">Health Monitor App</a>                    
-                    <a class="dropdown-item " href="join_doctor.html">Join Doctors</a>                    
+                    <a class="dropdown-item " href="doctor_search.html">Doctor Search</a>                    
+                    <a class="dropdown-item " href="monitor.html">Health Monitor App</a>
+                    <a class="dropdown-item " href="join_doctor.html">Join Doctors</a>
                     <a class="dropdown-item " href="consultation.html">Consultations</a>
+                    <a class="dropdown-item " href="patient_relations.html">Patient Relations</a>
+                    <a class="dropdown-item " href="careers.html">Careers</a>
+                </div>
+            </li>
+            <!-- Visible only on xs -->
+            <li class="nav-item d-block d-sm-none mx-auto">
+                <div class="row col-auto">
+                    <form class="form-inline py-1 my-1" action="search.html">
+                        <div class="form-row">
+                            <div class="col-auto align-self-center m-0">
+                                <a href="profile.html">
+                                    <span class="fa fa-user-circle fa-2x"></span>
+                                </a>
+                            </div>
+                            <div class="col align-self-center m-0">
+                                <label class="sr-only" for="search-bar">Search</label>
+                                <div class="input-group mb-0 mb-sm-0">
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div>
+                                    <input type="text" class="form-control col-auto pl-1" id="search-bar" placeholder="Search">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </li>
         </ul>
     </div>
 </nav>
 </header>
-        <main class="box-grid">
+
+            <main class="box-grid">
     <div class="container">
         <h4 class="row text-primary header">Account Page</h4>
         <div class="row image-full text-white">
@@ -95,51 +158,46 @@
         </div>        
         <div class="row">
             <div class="col-12 col-lg-12 col-md-12 col-sm-12">
-                <fieldset class="d-flex">
+                <fieldset class="clearfix">
                     <div class="row">
                         <div class="col-lg-6">
-                            <legend><h5 class="text-danger font-weight-bold">Registration</h5></legend>
-                            <form class="form-hospital my-3">
-                                <div class="form-group">
-                                    <label class="" for="name">Name</label>
-                                    <input type="text" name="" id="name" placeholder="Name" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label class="" for="email">Email</label>
-                                    <input type="email" name="" id="email" placeholder="Email" class="form-control">
-                                </div>         
-                                <div class="form-group">
-                                    <label class="" for="gender">Gender</label>
-                                    <select class="form-control" name="gender" id="gender">
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>                                
-                                    </select>               
-                                </div>    
-                                <div class="form-group">
-                                    <label class="" for="phone">Phone</label>
-                                    <input type="text" name="" id="phone" placeholder="Phone" class="form-control">
-                                </div>
-                                <div class="button-group">
-                                    <button class="btn btn-primary"><i class="fa fa-check" aria-hidden="true"></i> Register</button> <div class="float-right"><a href="forgot.html" class="btn btn -link">Forgot Password ?</a></div>
-                                </div>
-                            </form>
-                            <h5 class="text-danger font-weight-bold mt-4">Social Sign In</h5>
-                            <ul class="list-inline">
-                                <li class="list-inline-item"><a href="#" class="btn btn-success btn-sm my-1"><span class="fab fa-twitter"></span> login with Twitter</a></li>
-                                <li class="list-inline-item"><a href="#" class="btn btn-primary btn-sm my-1"><span class="fab fa-facebook"></span> login with Facebook</a></li>
-                                <li class="list-inline-item"><a href="#" class="btn btn-warning btn-sm my-1"><span class="fab fa-instagram"></span> login with Instagram</a></li>
-                                <li class="list-inline-item"><a href="#" class="btn btn-danger btn-sm my-1"><span class="fab fa-google"></span> login with Google</a></li>
-                                <li class="list-inline-item"><a href="#" class="btn btn-info btn-sm my-1"><span class="fab fa-yahoo"></span> login with Yahoo</a></li>
-                            </ul>
+                            <div class="row-fluid">
+                                <legend><h5 class="text-danger font-weight-bold hbb-gray">Sign In</h5></legend>
+                                <form class="form-hospital my-3" action="profile.html">
+                                    <div class="form-group">
+                                        <div class="form-row">
+                                            <div class="col-sm-6">
+                                                <label class="" for="email">Email</label>
+                                                <input type="email" name="" id="email" placeholder="Email" class="form-control">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="" for="name">Password</label>
+                                                <input type="password" name="" id="password" placeholder="Password" class="form-control">
+                                            </div>                                                
+                                        </div>
+                                    </div>
+                                    <div class="button-group">
+                                        <button class="btn btn-primary" type="submit"><i class="fa fa-check" aria-hidden="true"></i> Sign In</button> <div class="float-right"><a href="account_registration.html">Create Account</a> &bull; <a href="forgot.html">Forgot Password ?</a></div>
+                                    </div>
+                                </form>
+                                <h5 class="text-danger font-weight-bold mt-4 hbb-gray">Social Sign In</h5>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#" class="btn btn-success btn-sm my-1"><span class="fab fa-twitter"></span> Sign In with Twitter</a></li>
+                                    <li class="list-inline-item"><a href="#" class="btn btn-primary btn-sm my-1"><span class="fab fa-facebook"></span> Sign In with Facebook</a></li>
+                                    <li class="list-inline-item"><a href="#" class="btn btn-warning btn-sm my-1"><span class="fab fa-instagram"></span> Sign In with Instagram</a></li>
+                                    <li class="list-inline-item"><a href="#" class="btn btn-danger btn-sm my-1"><span class="fab fa-google"></span> Sign In with Google</a></li>
+                                    <li class="list-inline-item"><a href="#" class="btn btn-info btn-sm my-1"><span class="fab fa-yahoo"></span> Sign In with Yahoo</a></li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="col-lg-6">                            
                             <div class="bg-light py-2 px-4">
-                                <h5 class="font-weight-bold pb-2 text-muted">Recently registered users</h5>
+                                <h5 class="font-weight-bold pb-2 mb-3 text-muted hbb-gray">Recently registered users</h5>
                                 <div class="row">
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6 mb-2">
                                         <div class="card">
                                             <a href="profile.html" class="text-center mt-4">
-                                                <img src="" data-src="holder.js/100x100/auto" class="rounded-circle img-thumbnail"/>
+                                                <img src="assets/img/profile9.jpg" width="100" data-src="holder.js/100x100/auto" class="rounded-circle img-thumbnail ilist-i"/>
                                             </a>                                                    
                                             <div class="card-body">
                                                 <h5 class="card-title text-center"><a href="profile.html">Mr. Jekyll</a></h5>
@@ -147,10 +205,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6 mb-2">
                                         <div class="card">
                                             <a href="profile.html" class="text-center mt-4">
-                                                <img src="" data-src="holder.js/100x100/auto" class="rounded-circle img-thumbnail"/>
+                                                <img src="assets/img/profile10.jpg" width="100" data-src="holder.js/100x100/auto" class="rounded-circle img-thumbnail ilist-i"/>
                                             </a>
                                             <div class="card-body">
                                                 <h5 class="card-title text-center"><a href="profile.html">Mr. Hyde</a></h5>
@@ -158,10 +216,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6 mb-2">
                                         <div class="card">
                                             <a href="profile.html" class="text-center mt-4">
-                                                <img src="" data-src="holder.js/100x100/auto" class="rounded-circle img-thumbnail"/>
+                                                <img src="assets/img/profile6.jpg" width="100" data-src="holder.js/100x100/auto" class="rounded-circle img-thumbnail ilist-i"/>
                                             </a>
                                             <div class="card-body">
                                                 <h5 class="card-title text-center"><a href="profile.html">Mr. Hyde</a></h5>
@@ -169,10 +227,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6 mb-2">
                                         <div class="card">
                                             <a href="profile.html" class="text-center mt-4">
-                                                <img src="" data-src="holder.js/100x100/auto" class="rounded-circle img-thumbnail"/>
+                                                <img src="assets/img/profile8.jpg" width="100" data-src="holder.js/100x100/auto" class="rounded-circle img-thumbnail ilist-i"/>
                                             </a>
                                             <div class="card-body">
                                                 <h5 class="card-title text-center"><a href="profile.html">Mr. Hyde</a></h5>
@@ -190,46 +248,74 @@
     </div>
 </main>
     
-        <footer class="footer">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="text-center">
-                <ul class="list-inline footer-navbar">
-                    <li class="list-inline-item"><a href="join_doctor.html" class="">Join Doctors</a></li>
-                    <li class="list-inline-item"><a href="doctor_search.html" class="">Doctor Search</a></li>
-                    <li class="list-inline-item"><a href="aboutus.html" class="">About</a></li>
-                    <li class="list-inline-item"><a href="consultation.html" class="">Consultations</a></li>
-                    <li class="list-inline-item"><a href="articles.html" class="">Articles</a></li>
-                </ul>
+                
+    <footer class="footer">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <ul class="list-inline footer-navbar">
+                        <li class="list-inline-item"><a href="join_doctor.html" class="">Join Doctors</a></li>
+                        <li class="list-inline-item"><a href="doctor_search.html" class="">Doctor Search</a></li>
+                        <li class="list-inline-item"><a href="aboutus.html" class="">About</a></li>
+                        <li class="list-inline-item"><a href="consultation.html" class="">Consultations</a></li>
+                        <li class="list-inline-item"><a href="articles.html" class="">Articles</a></li>
+                        <li class="list-inline-item"><a href="samples.html" class="">Samples</a></li>
+                        <li class="list-inline-item"><a href="careers.html" class="">Careers</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container my-4 p-0">
-        <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline nav justify-content-center"> 
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li> 
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>  
-            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li> 
-            <li><a href="#"><i class="fab fa-google-plus"></i></a></li> 
-        </ul>   
-        <p class="text-center font-weight-light py-2 text-muted">Copyrights &copy; 2017. All rights reserved. Template Theme for &plus; Hospital websites. <br> <a href="terms.html" class="small">Terms and Policy</a></p>
-    </div>
-</footer>
+        <div class="container my-4 p-0">
+            <ul class="social-icons icon-rounded-circle icon-zoomed list-unstyled list-inline nav justify-content-center"> 
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li> 
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>  
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li> 
+                <li><a href="#"><i class="fab fa-google-plus"></i></a></li> 
+            </ul>   
+            <p class="text-center font-weight-light py-2 text-muted">Copyrights &copy; 2017. All rights reserved. Template Theme for &plus; Hospital websites. <br> <a href="terms.html" class="small">Terms and Policy</a><br><span class="small">Trademarks and brands are the property of their respective owners.</span>
+            </p>
+        </div>
+    </footer>
+        </div>
     </div><!-- /.container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!--script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script-->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/holder.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jRespond.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/jquery.waypoints.min.js"></script>
+    crossorigin="anonymous"></script-->
+        
+    
+
+    <!-- <script src="./assets/js/vendor.js"></script> -->
+    <!-- <script src="./assets/js/app.js"></script> -->
+
+        <script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+        <!-- <script src="assets/js/jquery.min.js"></script> -->
+        <script src="assets/js/holder.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jRespond.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        
+        <!-- Specific page scripts :Start -->
+        <script src="assets/vendors/gijgo/js/gijgo.min.js" type="text/javascript"></script>
+        <!-- :End -->
+        
+        
+    
+
+    <!-- <script src="assets/js/jquery.waypoints.min.js"></script> -->
     <script src="assets/js/script.js"></script>
     <!-- <script src="assets/js/app.js"></script> -->
+    <script>
+    // $(function () {
+    // 'use strict'
+        $('[data-toggle="offcanvas"]').on('click', function () {
+            $('.offcanvas-collapse').toggleClass('open');
+        });
+    // })
+  </script>
+
     </body>
 </html>

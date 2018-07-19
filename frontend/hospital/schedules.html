@@ -3,11 +3,10 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Schedules page | Hospital Theme Homepage Description.">
+    <meta name="description" content="Schedules page | Hospital &plus; Theme Doctor Schedules Description.">
     <meta name="author" content="">
-    <meta name="generator" content="Jekyll v3.6.2">
     <link rel="icon" href="favicon.ico">
-    <title>Schedules · Hospital Theme| Hospital Template from Bootstrap </title>
+    <title>Schedules · Hospital &plus; Theme  Hospital &plus; Theme</title>
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <!-- Animate.js -->    
@@ -15,39 +14,78 @@
     <!-- Owl.Carousel -->    
     <link href="assets/css/owl.carousel/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/css/owl.carousel/owl.theme.default.min.css" rel="stylesheet">
-    <!-- image hover effects -->    
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css" rel="stylesheet">     -->
+    <!-- Font Awesome 5 -->
+    <link href="assets/css/fontawesome/fontawesome.css" rel="stylesheet">    
+    <!-- Image Hover CSS -->
+    <link href="assets/css/imagehover/imagehover.css" rel="stylesheet">    
     <!-- Bootstrap core CSS -->
     <!-- Webpack | compiled -->
     <!--link href="assets/css/app.css" rel="stylesheet"-->
-    <!-- Jekyll | compiled -->    
+    <!-- Styles | compiled -->
+    
     <link href="assets/css/styles.css" rel="stylesheet">
-    <!-- <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    
+    
+    <!-- Specific page style :Start -->
+    <link href="assets/vendors/gijgo/css/gijgo.css" rel="stylesheet">
+    <!-- :End -->
+    
+    
     <!-- Custom styles for this template -->
     <link href="assets/css/custom.css" rel="stylesheet">
     </head>
     <body>
-    <div class="container">             
-        <header class="masthead">
-    <div class="row my-4">
-        <div class="col-6 col-lg-9 col-md-8 col-sm-6">
-            <h3 class="text-success sr-only"><a href="index.html"><span class="text-danger">+</span> hospital</a></h3>
-            <a href="index.html"><img class="img-fluid" alt="Brand Logo" src="assets/img/brand-logo-sm.png"></a>
-        </div>
-        <div class="d-flex justify-content-end col-6 col-lg-3 col-md-4 col-sm-6">
-            <a href="profile.html" class="align-self-center mr-1 mt-1">
-                <span class="fa fa-user-circle fa-2x"></span>
-            </a>
-            <form class="form-inline" action="search.html">
-                <label class="sr-only" for="search-bar">Search</label>
-                <div class="input-group mb-0 mb-sm-0">
-                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div>
-                    <input type="text" class="form-control col-auto pl-1" id="search-bar" placeholder="Search">
+    
+
+    <div id="wrapper">            
+        <div class="container">
+            
+<header class="">
+    <div class="container">
+        <div class="row d-flex justify-content-center justify-content-sm-between my-3">
+            <div class="row col-auto">
+                <div class="py-1 my-1">
+                    <h3 class="text-success sr-only"><a href="index.html"><span class="text-danger">+</span> hospital</a></h3>
+                    <a href="index.html"><img class="img-fluid" alt="Brand Logo" src="assets/img/brand-logo-sm.png"></a>
                 </div>
-            </form>
-        </div>
+            </div>
+            <div class="row col-auto">
+                <div class="d-flex mt-1 ml-2">
+                    <div class="container">
+                        <span class="text-muted mr-2">Call us :</span>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <i class="fa fa-phone text-danger"></i> <a href="tel:9-000-999-0099" class="text-primary">9-000-999-0099</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fa fa-fax text-danger"></i> <a href="tel:9-000-999-0099" class="text-primary">9-000-999-0099</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Hidden only on xs -->
+            <div class="row col-auto d-none d-sm-block">
+                <form class="form-inline py-1 my-1" action="search.html">
+                    <div class="form-row">
+                        <div class="col-auto align-self-center m-0">
+                            <a href="account.html">
+                                <span class="fa fa-user-circle fa-2x"></span>
+                            </a>
+                        </div>
+                        <div class="col-auto align-self-center m-0">
+                            <label class="sr-only" for="search-bar">Search</label>
+                            <div class="input-group mb-0 mb-sm-0">
+                                <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div>
+                                <input type="text" class="form-control col-auto pl-1" id="search-bar-navigation" placeholder="Search">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>            
     </div>
-    <nav class="navbar navbar-expand-md navbar-light bg-light mb-3">
+    <nav class="navbar navbar-expand-md navbar-light navbar-main">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -67,7 +105,7 @@
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
                     <a class="dropdown-item " href="products.html">Products</a>
                     <a class="dropdown-item " href="rates.html">Rates</a>
-                    <a class="dropdown-item " href="insurances.html">Insurances and Company</a>
+                    <a class="dropdown-item " href="insurances.html">Insurances</a>
                 </div>
             </li>
             <li class="nav-item ">
@@ -77,16 +115,41 @@
                 <a class="nav-link dropdown-toggle" href="javascript:;" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Internal</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown02">
                     <a class="dropdown-item active" href="schedules.html">Doctor Schedules</a>
-                    <a class="dropdown-item " href="monitor.html">Health Monitor App</a>                    
-                    <a class="dropdown-item " href="join_doctor.html">Join Doctors</a>                    
+                    <a class="dropdown-item " href="doctor_search.html">Doctor Search</a>                    
+                    <a class="dropdown-item " href="monitor.html">Health Monitor App</a>
+                    <a class="dropdown-item " href="join_doctor.html">Join Doctors</a>
                     <a class="dropdown-item " href="consultation.html">Consultations</a>
+                    <a class="dropdown-item " href="patient_relations.html">Patient Relations</a>
+                    <a class="dropdown-item " href="careers.html">Careers</a>
+                </div>
+            </li>
+            <!-- Visible only on xs -->
+            <li class="nav-item d-block d-sm-none mx-auto">
+                <div class="row col-auto">
+                    <form class="form-inline py-1 my-1" action="search.html">
+                        <div class="form-row">
+                            <div class="col-auto align-self-center m-0">
+                                <a href="profile.html">
+                                    <span class="fa fa-user-circle fa-2x"></span>
+                                </a>
+                            </div>
+                            <div class="col align-self-center m-0">
+                                <label class="sr-only" for="search-bar">Search</label>
+                                <div class="input-group mb-0 mb-sm-0">
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div>
+                                    <input type="text" class="form-control col-auto pl-1" id="search-bar" placeholder="Search">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </li>
         </ul>
     </div>
 </nav>
 </header>
-        <!-- #services -->
+
+            <!-- #services -->
 <main class="box-grid">
     <div class="container">
         <h4 class="row text-primary header">Doctor's Schedules in our + hospital.</h4>
@@ -94,269 +157,464 @@
             <h3>Doctor's Schedules</h3>
         </div> 
         <div class="row">
-            <div class="col-sm-12">
-                <div class="row">
-                    <form class="col form-hospital p-4 bg-warning">
-                        <div class="form-group">
-                            <label for="HospitalBranch">Branch</label>
-                            <select name="branch" id="HospitalBranch" class="form-control">
-                                <option value="">Branch One</option>
-                                <option value="">Branch Two</option>
-                                <option value="">Branch Three</option>
-                                <option value="">Branch Four</option>
-                                <option value="">Branch Five</option>
-                                <option value="">Branch Six</option>
-                                <option value="">Branch Seven</option>
-                                <option value="">Branch Eight</option>
-                                <option value="">Branch Nine</option>
-                                <option value="">Branch Ten</option>
-                                <option value="">Branch Eleven</option>
-                                <option value="">Branch Twelve</option>
-                            </select>                                   
-                            <label for="HospitalSpecialization">Specialization</label>
-                            <select name="doctor-category" class="form-control" id="HospitalSpecialization">
-                                <option selected="" value="">Any Category</option>
-                                <option value="allergy-immunology">Allergy &amp; Immunology</option>
-                                <option value="anesthesiology">Anesthesiology</option>
-                                <option value="audiology">Audiology</option>
-                                <option value="cardiology">Cardiology</option>
-                                <option value="cardiothoracic-surgery">Cardiothoracic Surgery</option>
-                                <option value="cardiovascular-surgery">Cardiovascular Surgery</option>
-                                <option value="clinical-research-physician">Clinical Research Physician</option>
-                                <option value="colon-rectal-surgery">Colon &amp; Rectal Surgery</option>
-                                <option value="dentistry">Dentistry</option>
-                                <option value="dermatology">Dermatology</option>
-                                <option value="diagnostic-radiology">Diagnostic Radiology</option>
-                                <option value="emergency-medicine">Emergency Medicine</option>
-                                <option value="endocrinology">Endocrinology</option>
-                                <option value="family-medicine">Family Medicine</option>
-                                <option value="gastroenterology">Gastroenterology</option>
-                                <option value="general-and-vascular-surgery">General and Vascular Surgery</option>
-                                <option value="general-surgery">General Surgery</option>
-                                <option value="gynecologic-oncology">Gynecologic Oncology</option>
-                                <option value="hospice-palliative-medicine">Hospice &amp; Palliative Medicine</option>
-                                <option value="infectious-disease">Infectious Disease</option>
-                                <option value="internal-medicine">Internal Medicine</option>
-                                <option value="interventional-neuroradiology">Interventional Neuroradiology</option>
-                                <option value="interventional-radiology">Interventional Radiology</option>
-                                <option value="neonatology">Neonatology</option>
-                                <option value="nephrology">Nephrology</option>
-                                <option value="neurological-surgery">Neurological Surgery</option>
-                                <option value="neurology">Neurology</option>
-                                <option value="neurophysiologic-intraoperative-monitoring">Neurophysiologic Intraoperative Monitoring</option>
-                                <option value="neuroradiology">Neuroradiology</option>
-                                <option value="nuclear-medicine">Nuclear Medicine</option>
-                                <option value="obstetrics-gynecology">Obstetrics &amp; Gynecology</option>
-                                <option value="oncology">Oncology</option>
-                                <option value="ophthalmology">Ophthalmology</option>
-                                <option value="oral-maxillofacial-surgery">Oral &amp; Maxillofacial Surgery</option>
-                                <option value="orthopedic-surgery">Orthopedic Surgery</option>
-                                <option value="otolaryngology">Otolaryngology</option>
-                                <option value="pain-medicine">Pain Medicine</option>
-                                <option value="pathology-anatomic">Pathology - Anatomic</option>
-                                <option value="pediatric-cardiology">Pediatric Cardiology</option>
-                                <option value="pediatric-ophthalmology">Pediatric Ophthalmology</option>
-                                <option value="pediatrics">Pediatrics</option>
-                                <option value="physical-medicine-rehab">Physical Medicine &amp; Rehab</option>
-                                <option value="plastic-surgery">Plastic Surgery</option>
-                                <option value="podiatric-surgery">Podiatric Surgery</option>
-                                <option value="primary-care">Primary Care</option>
-                                <option value="psychiatry">Psychiatry</option>
-                                <option value="pulmonary">Pulmonary</option>
-                                <option value="radiation-oncology">Radiation Oncology</option>
-                                <option value="reproductive-endocrinology-infertility">Reproductive Endocrinology &amp; Infertility</option>
-                                <option value="rheumatology">Rheumatology</option>
-                                <option value="teleradiography">Teleradiography</option>
-                                <option value="thoracic-surgery">Thoracic Surgery</option>
-                                <option value="urology">Urology</option>
-                                <option value="vascular-surgery">Vascular Surgery</option>
-                                <option value="wound-care">Wound Care</option>
-                            </select>
-                            <label for="HospitalDoctor">Doctor</label>
-                            <input type="text" name="doctor" class="form-control" id="HospitalDoctor" placeholder="Doctor">
-                            <div class="input-group py-2">
-                                <button class="btn btn-primary btn-md"><i class="fa fa-search" aria-hidden="true"></i>  Search</button>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h5 class="mt-3 py-2">Search Doctor :</h5>
+                    <form class="form-hospital p-4 bg-warning">
+                        <div class="form-group py-0 my-0">
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <label for="HospitalBranch">Branch</label>
+                                    <select name="branch" id="HospitalBranch" class="form-control">
+                                        <option selected="selected" value="">All Branches</option>                                        
+                                        <option value="">Branch One</option>
+                                        <option value="">Branch Two</option>
+                                        <option value="">Branch Three</option>
+                                        <option value="">Branch Four</option>
+                                        <option value="">Branch Five</option>
+                                        <option value="">Branch Six</option>
+                                        <option value="">Branch Seven</option>
+                                        <option value="">Branch Eight</option>
+                                        <option value="">Branch Nine</option>
+                                        <option value="">Branch Ten</option>
+                                        <option value="">Branch Eleven</option>
+                                        <option value="">Branch Twelve</option>
+                                    </select>    
+                                </div>
+                                <div class="form-group col-sm-6">                                   
+                                    <label for="HospitalSpecialization">Specialization</label>
+                                    <select name="doctor-category" class="form-control" id="HospitalSpecialization">
+                                        <option selected="selected" value="">Any Specialization</option>
+                                        <option value="allergy-immunology">Allergy &amp; Immunology</option>
+                                        <option value="anesthesiology">Anesthesiology</option>
+                                        <option value="audiology">Audiology</option>
+                                        <option value="cardiology">Cardiology</option>
+                                        <option value="cardiothoracic-surgery">Cardiothoracic Surgery</option>
+                                        <option value="cardiovascular-surgery">Cardiovascular Surgery</option>
+                                        <option value="clinical-research-physician">Clinical Research Physician</option>
+                                        <option value="colon-rectal-surgery">Colon &amp; Rectal Surgery</option>
+                                        <option value="dentistry">Dentistry</option>
+                                        <option value="dermatology">Dermatology</option>
+                                        <option value="diagnostic-radiology">Diagnostic Radiology</option>
+                                        <option value="emergency-medicine">Emergency Medicine</option>
+                                        <option value="endocrinology">Endocrinology</option>
+                                        <option value="family-medicine">Family Medicine</option>
+                                        <option value="gastroenterology">Gastroenterology</option>
+                                        <option value="general-and-vascular-surgery">General and Vascular Surgery</option>
+                                        <option value="general-surgery">General Surgery</option>
+                                        <option value="gynecologic-oncology">Gynecologic Oncology</option>
+                                        <option value="hospice-palliative-medicine">Hospice &amp; Palliative Medicine</option>
+                                        <option value="infectious-disease">Infectious Disease</option>
+                                        <option value="internal-medicine">Internal Medicine</option>
+                                        <option value="interventional-neuroradiology">Interventional Neuroradiology</option>
+                                        <option value="interventional-radiology">Interventional Radiology</option>
+                                        <option value="neonatology">Neonatology</option>
+                                        <option value="nephrology">Nephrology</option>
+                                        <option value="neurological-surgery">Neurological Surgery</option>
+                                        <option value="neurology">Neurology</option>
+                                        <option value="neurophysiologic-intraoperative-monitoring">Neurophysiologic Intraoperative Monitoring</option>
+                                        <option value="neuroradiology">Neuroradiology</option>
+                                        <option value="nuclear-medicine">Nuclear Medicine</option>
+                                        <option value="obstetrics-gynecology">Obstetrics &amp; Gynecology</option>
+                                        <option value="oncology">Oncology</option>
+                                        <option value="ophthalmology">Ophthalmology</option>
+                                        <option value="oral-maxillofacial-surgery">Oral &amp; Maxillofacial Surgery</option>
+                                        <option value="orthopedic-surgery">Orthopedic Surgery</option>
+                                        <option value="otolaryngology">Otolaryngology</option>
+                                        <option value="pain-medicine">Pain Medicine</option>
+                                        <option value="pathology-anatomic">Pathology - Anatomic</option>
+                                        <option value="pediatric-cardiology">Pediatric Cardiology</option>
+                                        <option value="pediatric-ophthalmology">Pediatric Ophthalmology</option>
+                                        <option value="pediatrics">Pediatrics</option>
+                                        <option value="physical-medicine-rehab">Physical Medicine &amp; Rehab</option>
+                                        <option value="plastic-surgery">Plastic Surgery</option>
+                                        <option value="podiatric-surgery">Podiatric Surgery</option>
+                                        <option value="primary-care">Primary Care</option>
+                                        <option value="psychiatry">Psychiatry</option>
+                                        <option value="pulmonary">Pulmonary</option>
+                                        <option value="radiation-oncology">Radiation Oncology</option>
+                                        <option value="reproductive-endocrinology-infertility">Reproductive Endocrinology &amp; Infertility</option>
+                                        <option value="rheumatology">Rheumatology</option>
+                                        <option value="teleradiography">Teleradiography</option>
+                                        <option value="thoracic-surgery">Thoracic Surgery</option>
+                                        <option value="urology">Urology</option>
+                                        <option value="vascular-surgery">Vascular Surgery</option>
+                                        <option value="wound-care">Wound Care</option>
+                                    </select>
+                                </div>
+                            </div>        
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <label for="HospitalDoctor">Doctor Name</label>
+                                    <input type="text" name="doctor" class="form-control" id="HospitalDoctor" placeholder="Doctor">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="datepicker-alt">Date</label>
+                                    <input id="datepicker-alt" placeholder="dd/mm/yyyy"/>
+                                </div>
                             </div>
+                            <!--a href="javascript:;" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal4"><i class="fa fa-calendar-alt"></i> Date</a-->
+                            <button class="btn btn-primary btn-md"><i class="fa fa-search" aria-hidden="true"></i>  Search</button>
                         </div>
                     </form>
                 </div>
+                <div class="col-sm-12">
+                    <h5 class="mt-3 py-2">Search Alphabetical :</h5>
+                    <div class="btn-toolbar">
+                        <div class="container">
+                            <div class="row btn-group btn-group-md text-white nav justify-content-center" role="group" aria-label="Doctor Search by Alphabetics">                                            
+                                <a class="btn btn-primary active">A</a>
+                                <a class="btn btn-primary">B</a>
+                                <a class="btn btn-primary">C</a>
+                                <a class="btn btn-primary">D</a>
+                                <a class="btn btn-primary">E</a>
+                                <a class="btn btn-primary">F</a>
+                                <a class="btn btn-primary">G</a>
+                                <a class="btn btn-primary">H</a>
+                                <a class="btn btn-primary">I</a>
+                                <a class="btn btn-primary">J</a>
+                                <a class="btn btn-primary">K</a>
+                                <a class="btn btn-primary">L</a>
+                                <a class="btn btn-primary">M</a>
+                                <a class="btn btn-primary">N</a>
+                                <a class="btn btn-primary">O</a>
+                                <a class="btn btn-primary">P</a>
+                                <a class="btn btn-primary">Q</a>
+                                <a class="btn btn-primary">R</a>
+                                <a class="btn btn-primary">S</a>
+                                <a class="btn btn-primary">T</a>
+                                <a class="btn btn-primary">U</a>
+                                <a class="btn btn-primary">V</a>
+                                <a class="btn btn-primary">W</a>
+                                <a class="btn btn-primary">X</a>
+                                <a class="btn btn-primary">Y</a>
+                                <a class="btn btn-primary">Z</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
             </div>
             <div class="col-sm-12 my-5">
                 <div class="row">
-                    <h5><span class="fa fa-bars text-warning"></span> &nbsp; Schedule List</h5>
+                    <h5 class="w-100"><span class="fa fa-bars text-warning"></span> &nbsp; Schedule List</h5>
                     <div class="table-responsive">
-                        <table class="table table-striped">
+                        <table class="table table-striped table-schedules">
                         <thead>
                             <tr>
-                                <th>Doctor Name</th>
-                                <th>Code ID</th>
-                                <th>Specialist</th>
-                                <th>Branch</th>
-                                <th>Action</th>
+                                <th class="align-top">Doctor Name</th>
+                                <th class="align-top d-none d-sm-table-cell">Code ID</th>
+                                <th class="align-top d-none d-sm-table-cell">Specialist</th>
+                                <th class="align-top">Branch</th>
+                                <th class="align-top">Schedules</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td><a href="doctor.html">Dr. Henry Jekyll</a></td>
-                                <td>Lorem</td>
-                                <td>ipsum</td>
-                                <td>dolor</td>
-                                <td>sit</td>
-                            </tr>
-                            <tr>
-                                <td><a href="doctor.html">Dr. Json Bootstrap</a></td>
-                                <td>amet</td>
-                                <td>consectetur</td>
-                                <td>adipiscing</td>
-                                <td>elit</td>
-                            </tr>
-                            <tr>
-                                <td><a href="doctor.html">Dr. Kalvin</a></td>
-                                <td>Integer</td>
-                                <td>nec</td>
-                                <td>odio</td>
-                                <td>Praesent</td>
-                            </tr>
-                            <tr>
-                                <td><a href="doctor.html">Dr. Impressium</a></td>
-                                <td>libero</td>
-                                <td>Sed</td>
-                                <td>cursus</td>
-                                <td>ante</td>
-                            </tr>
-                            <tr>
-                                <td><a href="doctor.html">Dr. React Native</a></td>
-                                <td>dapibus</td>
-                                <td>diam</td>
-                                <td>Sed</td>
-                                <td>nisi</td>
-                            </tr>
-                            <tr>
-                                <td><a href="doctor.html">Dr. Miolip Brenio</a></td>
-                                <td>Nulla</td>
-                                <td>quis</td>
-                                <td>sem</td>
-                                <td>at</td>
-                            </tr>
-                            <tr>
-                                <td><a href="doctor.html">Dr. Hyde</a></td>
-                                <td>nibh</td>
-                                <td>elementum</td>
-                                <td>imperdiet</td>
-                                <td>Duis</td>
-                            </tr>
-                            <tr>
-                                <td><a href="doctor.html">Dr. Watson</td>
-                                <td>sagittis</td>
-                                <td>ipsum</td>
-                                <td>Praesent</td>
-                                <td>mauris</td>
-                            </tr>
-                            <tr>
-                                <td><a href="doctor.html">Dr. Dre</a></td>
-                                <td>Fusce</td>
-                                <td>nec</td>
-                                <td>tellus</td>
-                                <td>sed</td>
-                            </tr>
-                            <tr>
-                                <td><a href="doctor.html">Dr. Edward Hyde</a></td>
-                                <td>augue</td>
-                                <td>semper</td>
-                                <td>porta</td>
-                                <td>Mauris</td>
-                            </tr>
-                            <tr>
-                                <td><a href="doctor.html">Dr. John Utterson</a></td>
-                                <td>massa</td>
-                                <td>Vestibulum</td>
-                                <td>lacinia</td>
-                                <td>arcu</td>
-                            </tr>
-                            <tr>
-                                <td><a href="doctor.html">Dr. Louis Stevenson</a></td>
-                                <td>eget</td>
-                                <td>nulla</td>
-                                <td>Class</td>
-                                <td>aptent</td>
-                            </tr>
-                            <tr>
-                                <td><a href="doctor.html">Dr. Webpack</a></td>
-                                <td>taciti</td>
-                                <td>sociosqu</td>
-                                <td>ad</td>
-                                <td>litora</td>
-                            </tr>
-                            <tr>
-                                <td><a href="doctor.html">Dr. Ruby on Rails</a></td>
-                                <td>torquent</td>
-                                <td>per</td>
-                                <td>conubia</td>
-                                <td>nostra</td>
-                            </tr>
-                            <tr>
-                                <td><a href="doctor.html">Dr. Arduino Firmata</a></td>
-                                <td>per</td>
-                                <td>inceptos</td>
-                                <td>himenaeos</td>
-                                <td>Curabitur</td>
-                            </tr>
-                            <tr>
-                                <td><a href="doctor.html">Dr. Esp8266 Wifi</a></td>
-                                <td>sodales</td>
-                                <td>ligula</td>
-                                <td>in</td>
-                                <td>libero</td>
-                            </tr>
-                        </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img width="80" src="assets/img/profile.jpg" data-src="holder.js/80x80/auto" class="img-thumbnail rounded-circle">
+                                        <a href="doctor.html" class="table-link d-flex d-sm-inline-flex">
+                                            <span class="text-left pt-1 pl-1">Dr. Henry Jekyll</span>
+                                        </a>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell">Lorem</td>
+                                    <td class="d-none d-sm-table-cell">dolor</td>
+                                    <td>ipsum</td>
+                                    <td><i class="fa fa-clock"></i> 12.00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img width="80" src="assets/img/profile.jpg" data-src="holder.js/80x80/auto" class="img-thumbnail rounded-circle">
+                                        <a href="doctor.html" class="table-link d-flex d-sm-inline-flex">
+                                            <span class="text-left pt-1 pl-1">Dr. Json Bootstrap</span>
+                                        </a>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell">amet</td>
+                                    <td class="d-none d-sm-table-cell">adipiscing</td>
+                                    <td>consectetur</td>
+                                    <td><i class="fa fa-clock"></i> 12.00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img width="80" src="assets/img/profile.jpg" data-src="holder.js/80x80/auto" class="img-thumbnail rounded-circle">
+                                        <a href="doctor.html" class="table-link d-flex d-sm-inline-flex">
+                                            <span class="text-left pt-1 pl-1">Dr. Kalvin</span>
+                                        </a>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell">Integer</td>
+                                    <td class="d-none d-sm-table-cell">odio</td>
+                                    <td>nec</td>
+                                    <td><i class="fa fa-clock"></i> 12.00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img width="80" src="assets/img/profile.jpg" data-src="holder.js/80x80/auto" class="img-thumbnail rounded-circle">
+                                        <a href="doctor.html" class="table-link d-flex d-sm-inline-flex">
+                                            <span class="text-left pt-1 pl-1">Dr. Impressium</span>                                        
+                                        </a>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell">libero</td>
+                                    <td class="d-none d-sm-table-cell">cursus</td>
+                                    <td>Sed</td>
+                                    <td><i class="fa fa-clock"></i> 12.00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img width="80" src="assets/img/profile.jpg" data-src="holder.js/80x80/auto" class="img-thumbnail rounded-circle">
+                                        <a href="doctor.html" class="table-link d-flex d-sm-inline-flex">
+                                            <span class="text-left pt-1 pl-1">Dr. React Native</span>
+                                        </a>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell">dapibus</td>
+                                    <td class="d-none d-sm-table-cell">Sed</td>
+                                    <td>diam</td>
+                                    <td><i class="fa fa-clock"></i> 12.00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img width="80" src="assets/img/profile.jpg" data-src="holder.js/80x80/auto" class="img-thumbnail rounded-circle">
+                                        <a href="doctor.html" class="table-link d-flex d-sm-inline-flex">
+                                            <span class="text-left pt-1 pl-1">Dr. Miolip Brenio</span>
+                                        </a>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell">Nulla</td>
+                                    <td>quis</td>
+                                    <td class="d-none d-sm-table-cell">sem</td>
+                                    <td><i class="fa fa-clock"></i> 12.00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img width="80" src="assets/img/profile.jpg" data-src="holder.js/80x80/auto" class="img-thumbnail rounded-circle">
+                                        <a href="doctor.html" class="table-link d-flex d-sm-inline-flex">
+                                            <span class="text-left pt-1 pl-1">Dr. Hyde</span>
+                                        </a>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell">nibh</td>
+                                    <td class="d-none d-sm-table-cell">imperdiet</td>
+                                    <td>elementum</td>
+                                    <td><i class="fa fa-clock"></i> 12.00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img width="80" src="assets/img/profile.jpg" data-src="holder.js/80x80/auto" class="img-thumbnail rounded-circle">
+                                        <a href="doctor.html" class="table-link d-flex d-sm-inline-flex">
+                                            <div class="text-left pt-1 pl-1">Dr. Watson</div>
+                                        </a>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell">sagittis</td>
+                                    <td class="d-none d-sm-table-cell">Praesent</td>
+                                    <td>ipsum</td>
+                                    <td><i class="fa fa-clock"></i> 12.00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img width="80" src="assets/img/profile.jpg" data-src="holder.js/80x80/auto" class="img-thumbnail rounded-circle">
+                                        <a href="doctor.html" class="table-link d-flex d-sm-inline-flex">
+                                            <span class="text-left pt-1 pl-1">Dr. Dre</span>
+                                        </a>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell">Fusce</td>
+                                    <td class="d-none d-sm-table-cell">tellus</td>                                    
+                                    <td>nec</td>
+                                    <td><i class="fa fa-clock"></i> 12.00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img width="80" src="assets/img/profile.jpg" data-src="holder.js/80x80/auto" class="img-thumbnail rounded-circle">
+                                        <a href="doctor.html" class="table-link d-flex d-sm-inline-flex">
+                                            <span class="text-left pt-1 pl-1">Dr. Edward Hyde</span>
+                                        </a>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell">augue</td>
+                                    <td class="d-none d-sm-table-cell">porta</td>                                    
+                                    <td>semper</td>
+                                    <td><i class="fa fa-clock"></i> 12.00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img width="80" src="assets/img/profile.jpg" data-src="holder.js/80x80/auto" class="img-thumbnail rounded-circle">
+                                        <a href="doctor.html" class="table-link d-flex d-sm-inline-flex">
+                                            <span class="text-left pt-1 pl-1">Dr. John Utterson</span>
+                                        </a>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell">massa</td>
+                                    <td>Vestibulum</td>
+                                    <td class="d-none d-sm-table-cell">lacinia</td>
+                                    <td><i class="fa fa-clock"></i> 12.00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img width="80" src="assets/img/profile.jpg" data-src="holder.js/80x80/auto" class="img-thumbnail rounded-circle">
+                                        <a href="doctor.html" class="table-link d-flex d-sm-inline-flex">
+                                            <span class="text-left pt-1 pl-1">Dr. Louis Stevenson</span>
+                                        </a>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell">eget</td>
+                                    <td class="d-none d-sm-table-cell">Class</td>                                    
+                                    <td>nulla</td>
+                                    <td><i class="fa fa-clock"></i> 12.00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img width="80" src="assets/img/profile.jpg" data-src="holder.js/80x80/auto" class="img-thumbnail rounded-circle">
+                                        <a href="doctor.html" class="table-link d-flex d-sm-inline-flex">
+                                            <span class="text-left pt-1 pl-1">Dr. Webpack</span>
+                                        </a>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell">taciti</td>
+                                    <td class="d-none d-sm-table-cell">ad</td>
+                                    <td>sociosqu</td>
+                                    <td><i class="fa fa-clock"></i> 12.00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img width="80" src="assets/img/profile.jpg" data-src="holder.js/80x80/auto" class="img-thumbnail rounded-circle">
+                                        <a href="doctor.html" class="table-link d-flex d-sm-inline-flex">
+                                            <span class="text-left pt-1 pl-1">Dr. Ruby on Rails</span>
+                                        </a>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell">torquent</td>
+                                    <td class="d-none d-sm-table-cell">conubia</td>
+                                    <td>per</td>
+                                    <td><i class="fa fa-clock"></i> 12.00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img width="80" src="assets/img/profile.jpg" data-src="holder.js/80x80/auto" class="img-thumbnail rounded-circle">
+                                        <a href="doctor.html" class="table-link d-flex d-sm-inline-flex">
+                                            <span class="text-left pt-1 pl-1">Dr. Arduino Firmata</span>
+                                        </a>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell">per</td>
+                                    <td class="d-none d-sm-table-cell">himenaeos</td>                                    
+                                    <td>inceptos</td>
+                                    <td><i class="fa fa-clock"></i> 12.00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img width="80" src="assets/img/profile.jpg" data-src="holder.js/80x80/auto" class="img-thumbnail rounded-circle">
+                                        <a href="doctor.html" class="table-link d-flex d-sm-inline-flex">
+                                            <span class="text-left pt-1 pl-1">Dr. Esp8266 Wifi</span>
+                                        </a>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell">sodales</td>
+                                    <td class="d-none d-sm-table-cell">in</td>
+                                    <td>ligula</td>
+                                    <td><i class="fa fa-clock"></i> 12.00 PM</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
+                </div>
+
+                <hr>
+                <nav aria-label="search-paginate">
+                    <ul class="pagination pagination-sm">
+                        <li class="page-item disabled">
+                            <span class="page-link">Previous</span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active">
+                            <span class="page-link">
+                                2
+                                <span class="sr-only">(current)</span>
+                            </span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="row">
+                            <div class="side-bar-bottom col-lg-12 my-3">
+            <h3>Partnership with :</h3>
+            <div class="partnership-carousel owl-carousel owl-theme">
+                <img class="img-thumbnail" data-src="holder.js/320x100/auto&text=1" data-src-retina="holder.js/320x100/auto&text=1-retina" alt="Image Alt">
+                <img class="img-thumbnail" data-src="holder.js/320x100/auto&text=2" data-src-retina="holder.js/320x100/auto&text=2-retina" alt="Image Alt">
+                <img class="img-thumbnail" data-src="holder.js/320x100/auto&text=3" data-src-retina="holder.js/320x100/auto&text=3-retina" alt="Image Alt">
+                <img class="img-thumbnail" data-src="holder.js/320x100/auto&text=4" data-src-retina="holder.js/320x100/auto&text=4-retina" alt="Image Alt">
+                <img class="img-thumbnail" data-src="holder.js/320x100/auto&text=5" data-src-retina="holder.js/320x100/auto&text=5-retina" alt="Image Alt">
+                <img class="img-thumbnail" data-src="holder.js/320x100/auto&text=6" data-src-retina="holder.js/320x100/auto&text=6-retina" alt="Image Alt">
+                <img class="img-thumbnail" data-src="holder.js/320x100/auto&text=7" data-src-retina="holder.js/320x100/auto&text=7-retina" alt="Image Alt">
+                <img class="img-thumbnail" data-src="holder.js/320x100/auto&text=8" data-src-retina="holder.js/320x100/auto&text=8-retina" alt="Image Alt">
+                <img class="img-thumbnail" data-src="holder.js/320x100/auto&text=9" data-src-retina="holder.js/320x100/auto&text=9-retina" alt="Image Alt">
+                <img class="img-thumbnail" data-src="holder.js/320x100/auto&text=10" data-src-retina="holder.js/320x100/auto&text=10-retina" alt="Image Alt">
+                <img class="img-thumbnail" data-src="holder.js/320x100/auto&text=11" data-src-retina="holder.js/320x100/auto&text=11-retina" alt="Image Alt">
+            </div>
+        </div>
                 </div>
             </div>
         </div>
     </div>
 </main>
-    
-        <footer class="footer">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="text-center">
-                <ul class="list-inline footer-navbar">
-                    <li class="list-inline-item"><a href="join_doctor.html" class="">Join Doctors</a></li>
-                    <li class="list-inline-item"><a href="doctor_search.html" class="">Doctor Search</a></li>
-                    <li class="list-inline-item"><a href="aboutus.html" class="">About</a></li>
-                    <li class="list-inline-item"><a href="consultation.html" class="">Consultations</a></li>
-                    <li class="list-inline-item"><a href="articles.html" class="">Articles</a></li>
-                </ul>
+                
+    <footer class="footer">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <ul class="list-inline footer-navbar">
+                        <li class="list-inline-item"><a href="join_doctor.html" class="">Join Doctors</a></li>
+                        <li class="list-inline-item"><a href="doctor_search.html" class="">Doctor Search</a></li>
+                        <li class="list-inline-item"><a href="aboutus.html" class="">About</a></li>
+                        <li class="list-inline-item"><a href="consultation.html" class="">Consultations</a></li>
+                        <li class="list-inline-item"><a href="articles.html" class="">Articles</a></li>
+                        <li class="list-inline-item"><a href="samples.html" class="">Samples</a></li>
+                        <li class="list-inline-item"><a href="careers.html" class="">Careers</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container my-4 p-0">
-        <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline nav justify-content-center"> 
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li> 
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>  
-            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li> 
-            <li><a href="#"><i class="fab fa-google-plus"></i></a></li> 
-        </ul>   
-        <p class="text-center font-weight-light py-2 text-muted">Copyrights &copy; 2017. All rights reserved. Template Theme for &plus; Hospital websites. <br> <a href="terms.html" class="small">Terms and Policy</a></p>
-    </div>
-</footer>
+        <div class="container my-4 p-0">
+            <ul class="social-icons icon-rounded-circle icon-zoomed list-unstyled list-inline nav justify-content-center"> 
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li> 
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>  
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li> 
+                <li><a href="#"><i class="fab fa-google-plus"></i></a></li> 
+            </ul>   
+            <p class="text-center font-weight-light py-2 text-muted">Copyrights &copy; 2017. All rights reserved. Template Theme for &plus; Hospital websites. <br> <a href="terms.html" class="small">Terms and Policy</a><br><span class="small">Trademarks and brands are the property of their respective owners.</span>
+            </p>
+        </div>
+    </footer>
+        </div>
     </div><!-- /.container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!--script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script-->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/holder.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jRespond.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/jquery.waypoints.min.js"></script>
+    crossorigin="anonymous"></script-->
+        
+    
+
+    <!-- <script src="./assets/js/vendor.js"></script> -->
+    <!-- <script src="./assets/js/app.js"></script> -->
+
+        <script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+        <!-- <script src="assets/js/jquery.min.js"></script> -->
+        <script src="assets/js/holder.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jRespond.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        
+        <!-- Specific page scripts :Start -->
+        <script src="assets/vendors/gijgo/js/gijgo.min.js" type="text/javascript"></script>
+        <!-- :End -->
+        
+        
+    
+
+    <!-- <script src="assets/js/jquery.waypoints.min.js"></script> -->
     <script src="assets/js/script.js"></script>
     <!-- <script src="assets/js/app.js"></script> -->
+    <script>
+    // $(function () {
+    // 'use strict'
+        $('[data-toggle="offcanvas"]').on('click', function () {
+            $('.offcanvas-collapse').toggleClass('open');
+        });
+    // })
+  </script>
+
     </body>
 </html>

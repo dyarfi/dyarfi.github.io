@@ -7,7 +7,12 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
     <title>Home · Motomobs Theme Homepage Description. |</title>
-
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <!-- Webpack | compiled -->
@@ -15,16 +20,15 @@
 
     <!-- Main Stylesheet -->
     
-    <link rel="stylesheet" href="http://localhost:3000/main.css">
-    
-    
+    <!-- <link rel="stylesheet" href="/assets/styles.css"> -->
     <!-- Jekyll | compiled -->
-    <link href="./assets/css/imagehover.css" rel="stylesheet">    
-    <link href="./assets/css/owl.carousel/owl.carousel.min.css" rel="stylesheet">
-    <link href="./assets/css/owl.carousel/owl.theme.default.min.css" rel="stylesheet">
-    <link href="./assets/css/baguetteBox.min.css" rel="stylesheet">    
+    <!-- <link href="assets/css/imagehover.css" rel="stylesheet">     -->
+    <link href="assets/css/owl.carousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/css/baguetteBox.min.css" rel="stylesheet">    
     <!-- Jekyll | compiled -->
-    <link href="./assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    
 
     <!-- Custom styles for this template -->
     <!-- <link href="assets/css/custom.css" rel="stylesheet"> -->
@@ -38,90 +42,67 @@
 
 
     </head>
-<body>
-    <!-- Preload the Whole Page -->
-<div id="preloader">
-    <!-- <div id="loading-animation">&nbsp;</div> -->
-    <!--div class="spinner scaleout">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
-    </div-->
-    <div class="spinner double-bounce">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
+<body class="preloader">
+        <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner double-bounce">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
     </div>
-</div>
-    <div class="overlay overlay-hugeinc" id="overlay-navbar">
-    <button type="button" class="overlay-close font-weight-light" onclick="$('#overlay-navbar').removeClass('open');"><span class="fa fa-times-circle fa-3x"></span></button>
-    <div class="navbar-search">
-        <ul class="list-inline col-lg-12">
-            <li class="list-inline-item">
-                <form class="form-inline container" id="form-search" action="search.html">
-                    <div class="col-lg-12">
-                        <label class="sr-only" for="search-bar">Search</label>
-                        <div class="input-group input-group-lg mb-0 mb-sm-0">
-                            <div class="input-group-addon"><span class="fa fa-search"></span></div>
-                            <input type="text" class="form-control" name="query" id="search-bar" placeholder="Type and hit Enter..">
-                        </div>
-                    </div>	
-                </form>
-            </li>
-        </ul>
-    </div>
-</div>
     <div id="wrapper">    
-    <!-- Navigation -->
-<div class="bg-dark pt-3 pb-4" id="section-nav">
-    <div class="col-auto text-center m-2">
-        <a class="index.html" href="index.html"><img src="assets/img/brand-logo.png" class="img-fluid" alt="Brand Logo"><span class="sr-only">Home</span></a>
+    <header id="header">    
+        <!-- Navigation -->
+    <div class="bg-dark" id="section-nav">
+        <div class="col-auto text-center m-2">
+            <a class="index.html" href="index.html"><img src="assets/img/brand-logo.png" class="img-fluid" alt="Brand Logo"><span class="sr-only">Home</span></a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-2 mb-0">
+            <div class="container-fluid">
+                <!--a onclick="$('#overlay-navbar').toggleClass('open');" class="btn btn-outline-light btn-lg" data-target="#overlay-navbar" aria-controls="overlay-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </a-->
+                <div class="mx-auto m-2 p-2">
+                    <button class="navbar-toggler rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars text-white"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse border border-secondary border-left-0 border-right-0 p-2 mt-2" id="navbarResponsive">
+                    <ul class="navbar-nav nav-justified mx-auto justify-content-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="custom.html">Customs</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="garage.html">Garage</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>            
+                </div>
+            </div>
+        </nav>  
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-2 mb-0">
-        <!--a onclick="$('#overlay-navbar').toggleClass('open');" class="btn btn-outline-light btn-lg" data-target="#overlay-navbar" aria-controls="overlay-navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="fa fa-bars"></span>
-        </a-->
-        <div class="mx-auto m-2 p-2">
-            <button class="navbar-toggler rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fa fa-bars text-white"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse border border-secondary border-left-0 border-right-0 p-2 mt-2" id="navbarResponsive">
-            <ul class="navbar-nav nav-justified mx-auto justify-content-center">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="custom.html">Customs</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="garage.html">Garage</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>            
-        </div>
-    </nav>  
-</div>
-    <!-- Header - set the background image for the header in the line below -->
-<!--header class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1076');">
-    <img class="img-fluid d-block mx-auto" src="http://placehold.it/200x200&text=Logo" alt="">
-</header-->
+</header>
         <main id="content">
             	<!-- Content section -->
-	<section class="section" id="section-home">
+	<section class="section" id="section-home">        
 		<div class="container">
-			<div id="myCarousel" class="carousel carousel-fade slide" data-ride="carousel">
+            <div id="myCarousel" class="carousel carousel-fade slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#myCarousel" data-slide-to="1"></li>
@@ -181,8 +162,8 @@
 							<div class="card">
 								<figure class="gray imghvr-shutter-in-out-diag-1"><img src="./assets/img/custom1.jpg" data-src="holder.js/240x240/auto" alt="example-image">
 									<figcaption class="text-center">
-										<h5 class="font-weight-bold">CB100 Classic Ride Custom Build</h5>
-										<p>Street Bikes</p>
+										<h5>CB100 Classic Ride Custom Build</h5>
+										<p class="text-muted">Street Bikes</p>
 										<a href="custom_detail.html"><i class="fas fa-search"></i></a>
 									</figcaption>
 								</figure>
@@ -196,8 +177,8 @@
 							<div class="card">
 								<figure class="gray imghvr-shutter-in-out-diag-1"><img src="./assets/img/custom2.jpg" data-src="holder.js/240x240/auto" alt="example-image">
 									<figcaption class="text-center">
-										<h5 class="font-weight-bold">Honda Black Bomber 1966 Classic</h5>
-										<p>Classic custom</p>
+										<h5>Honda Black Bomber 1966 Classic</h5>
+										<p class="text-muted">Classic custom</p>
 										<a href="custom_detail.html"><i class="fas fa-search"></i></a>
 									</figcaption>
 								</figure>
@@ -211,8 +192,8 @@
 							<div class="card">
 								<figure class="gray imghvr-shutter-in-out-diag-1"><img src="./assets/img/custom3.jpg" data-src="holder.js/240x240/auto" alt="example-image">
 									<figcaption class="text-center">
-										<h5 class="font-weight-bold">Honda CB450T Hawk 82 Cafe Racer</h5>
-										<p>Cafe Racer</p>
+										<h5>Honda CB450T Hawk 82 Cafe Racer</h5>
+										<p class="text-muted">Cafe Racer</p>
 										<a href="custom_detail.html"><i class="fas fa-search"></i></a>
 									</figcaption>
 								</figure>
@@ -226,8 +207,8 @@
 							<div class="card">
 								<figure class="gray imghvr-shutter-in-out-diag-1"><img src="./assets/img/custom4.jpg" data-src="holder.js/240x240/auto" alt="example-image">
 									<figcaption class="text-center">
-										<h5 class="font-weight-bold">Honda CB450T Hawk 82 Cafe Racer</h5>
-										<p>Cafe Racer</p>
+										<h5>Honda CB450T Hawk 82 Cafe Racer</h5>
+										<p class="text-muted">Cafe Racer</p>
 										<a href="custom_detail.html"><i class="fas fa-search"></i></a>
 									</figcaption>
 								</figure>
@@ -245,44 +226,44 @@
 	<section class="section" id="section-services">
 		<div class="container">
 			<h3 class="header-am">Our Services</h3>
-			<hr class="featurette-divider">
-			<div class="row featurette">
-				<div class="col-md-8">
-					<h4 class="featurette-heading">Classic Restore. <span class="text-muted">Old School Motorcycles.</span></h4>
+			<hr class="mm-divider">
+			<div class="row">
+				<div class="col-md-9">
+					<h4 class="mm-heading">Classic Restore. <span class="text-muted">Old School Motorcycles.</span></h4>
 					<p class="text-muted">
 						With network of physical devices, vehicles, home appliances, and other items embedded with electronics, software, sensors, actuators, and network connectivity which enable these objects to connect and exchange data. Each thing is uniquely identifiable through its embedded computing system but is able to inter-operate within the existing Internet infrastructure. Experts estimate that the IoT will consist of about 30 billion objects by 2020.
 					</p>
 				</div>
-				<div class="col-md-4 text-right">
-					<img class="img-thumbnail featurette-image img-fluid mx-auto" src="assets/img/service1.jpg" data-src="holder.js/360x360/auto" alt="Generic placeholder image">
+				<div class="col-md-3 text-right">
+					<a href="services.html"><img class="img-thumbnail ilist-c img-fluid mx-auto" src="assets/img/service1.jpg" data-src="holder.js/360x360/auto" alt="Classic Restore"></a>
 				</div>
 			</div>
-			<hr class="featurette-divider">
-			<div class="row featurette">
-				<div class="col-md-8 order-md-2">
+			<hr class="mm-divider">
+			<div class="row">
+				<div class="col-md-9 order-md-2">
 					<h4 class="featurette-heading">Exterior and Interior. <span class="text-muted">Revive Dream Ride to Life.</span></h4>
 					<p class="text-muted">
 						The world's technological per-capita capacity to store information has roughly doubled every 40 months since the 1980s as of 2012, every day 2.5 exabytes (2.5×1018) of data are generated. By 2025, IDC predicts there will be 163 zettabytes of data.
 						One question for large enterprises is determining who should own big-data initiatives that affect the entire organization.
 					</p>
 				</div>
-				<div class="col-md-4 order-md-1">
-					<img class="img-thumbnail featurette-image img-fluid mx-auto" src="assets/img/service3.jpg" data-src="holder.js/360x360/auto" alt="Generic placeholder image">
+				<div class="col-md-3 order-md-1">
+					<a href="services.html"><img class="img-thumbnail ilist-c img-fluid mx-auto" src="assets/img/service3.jpg" data-src="holder.js/360x360/auto" alt="Exterior and Interior"></a>
 				</div>
 			</div>
-			<hr class="featurette-divider">
-			<div class="row featurette">
-				<div class="col-md-8">
+			<hr class="mm-divider">
+			<div class="row">
+				<div class="col-md-9">
 					<h4 class="featurette-heading">Engine Boost. <span class="text-muted">Tuning up the Power.</span></h4>
 					<p class="text-muted">
 						Data sets grow rapidly - in part because they are increasingly gathered by cheap and numerous information-sensing Internet of things devices such as mobile devices, aerial (remote sensing), software logs, cameras, microphones, radio-frequency identification (RFID) readers and wireless sensor networks.
 					</p>
 				</div>
-				<div class="col-md-4 text-right">
-					<img class="img-thumbnail featurette-image img-fluid mx-auto" src="assets/img/service2.jpg" data-src="holder.js/360x360/auto" alt="Generic placeholder image">
+				<div class="col-md-3 text-right">
+					<a href="services.html"><img class="img-thumbnail ilist-c img-fluid mx-auto" src="assets/img/service2.jpg" data-src="holder.js/360x360/auto" alt="Engine Boost"></a>
 				</div>
 			</div>
-			<hr class="featurette-divider">
+			<hr class="mm-divider">
 		</div>	
 	</section>
 	<section class="section" id="section-testimonial">
@@ -292,7 +273,7 @@
 				<div class="owl-carousel testimonial">
 					<div class="col-auto mx-auto item">
 						<div class="col-md-12">
-							<img class="img-thumbnail rounded-circle my-3 w-75 owl-lazy" src="assets/img/testimonial2.jpg" data-src="assets/img/testimonial2.jpg" data-src-retina="assets/img/testimonial2.jpg" alt="Generic placeholder image">							
+							<img class="img-thumbnail rounded-circle my-3 w-75 ilist-c owl-lazy" src="assets/img/testimonial2.jpg" data-src="assets/img/testimonial2.jpg" data-src-retina="assets/img/testimonial2.jpg" alt="Client Testimonial 2">							
 						</div>
 						<blockquote class="blockquote mb-0 card-body">
 							<p>This dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -305,7 +286,7 @@
 					</div><!-- /.col-md-4 -->
 					<div class="col-auto mx-auto item">
 						<div class="col-md-12">
-							<img class="img-thumbnail rounded-circle my-3 w-75 owl-lazy" src="assets/img/testimonial1.jpg" data-src="assets/img/testimonial1.jpg" data-src-retina="assets/img/testimonial1.jpg" alt="Generic placeholder image">
+							<img class="img-thumbnail rounded-circle my-3 w-75 ilist-c owl-lazy" src="assets/img/testimonial1.jpg" data-src="assets/img/testimonial1.jpg" data-src-retina="assets/img/testimonial1.jpg" alt="Client Testimonial 1">
 						</div>	
 						<blockquote class="blockquote mb-0 card-body">
 							<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
@@ -318,7 +299,7 @@
 					</div><!-- /.col-md-4 -->
 					<div class="col-auto mx-auto item">
 						<div class="col-md-12">
-							<img class="img-thumbnail rounded-circle my-3 w-75 owl-lazy" src="assets/img/testimonial3.jpg" data-src="assets/img/testimonial3.jpg" data-src-retina="assets/img/testimonial3.jpg" alt="Generic placeholder image">
+							<img class="img-thumbnail rounded-circle my-3 w-75 ilist-c owl-lazy" src="assets/img/testimonial3.jpg" data-src="assets/img/testimonial3.jpg" data-src-retina="assets/img/testimonial3.jpg" alt="Client Testimonial 3">
 						</div>
 						<blockquote class="blockquote mb-0 card-body">
 							<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
@@ -344,9 +325,9 @@
 						<h5 class="card-title">Card title that wraps to a new line</h5>
 						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 						<ul class="list-inline">
-							<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-tag"></span> T-Shirt</a></li>
-							<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-money-bill-alt"></span> $ 12</a></li>
-							<li class="list-inline-item"><a href="https://www.ebay.com/rpp/moda-en" target="_blank" class="list-item"><span class="fa fa-cart-plus"></span> Buy</a></li>
+							<li class="list-inline-item"><a href="javascript:;" class="list-item" title="List Item"><span class="fa fa-tag"></span> T-Shirt</a></li>
+							<li class="list-inline-item"><a href="javascript:;" class="list-item" title="List Item"><span class="fa fa-money-bill-alt"></span> $ 12</a></li>
+							<li class="list-inline-item"><a href="http://dykraf.com/demos/motomobs" target="_blank" class="list-item" title="List Item"><span class="fa fa-cart-plus"></span> Buy</a></li>
 						</ul>
 					</div>
 				</div>						
@@ -356,9 +337,9 @@
 						<h5 class="card-title">Card title that wraps to a new line</h5>
 						<p class="card-text">This dolor sit amet consectetur adipisicing elit!</p>
 						<ul class="list-inline">
-							<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-tag"></span> T-Shirt</a></li>
-							<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-money-bill-alt"></span> $ 11</a></li>
-							<li class="list-inline-item"><a href="https://www.ebay.com/rpp/moda-en" target="_blank" class="list-item"><span class="fa fa-cart-plus"></span> Buy</a></li>
+							<li class="list-inline-item"><a href="javascript:;" class="list-item" title="List Item"><span class="fa fa-tag"></span> T-Shirt</a></li>
+							<li class="list-inline-item"><a href="javascript:;" class="list-item" title="List Item"><span class="fa fa-money-bill-alt"></span> $ 11</a></li>
+							<li class="list-inline-item"><a href="http://dykraf.com/demos/motomobs" target="_blank" class="list-item" title="List Item"><span class="fa fa-cart-plus"></span> Buy</a></li>
 						</ul>
 					</div>
 				</div>
@@ -368,9 +349,9 @@
 						<h5 class="card-title">Card title that wraps to a new line</h5>
 						<p class="card-text">This dolor sit amet consectetur, adipisicing elit. Reiciendis repellendus modi accusamus enim animi.</p>
 						<ul class="list-inline">
-							<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-tag"></span> T-Shirt</a></li>
-							<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-money-bill-alt"></span> $ 13</a></li>
-							<li class="list-inline-item"><a href="https://www.ebay.com/rpp/moda-en" target="_blank" class="list-item"><span class="fa fa-cart-plus"></span> Buy</a></li>
+							<li class="list-inline-item"><a href="javascript:;" class="list-item" title="List Item"><span class="fa fa-tag"></span> T-Shirt</a></li>
+							<li class="list-inline-item"><a href="javascript:;" class="list-item" title="List Item"><span class="fa fa-money-bill-alt"></span> $ 13</a></li>
+							<li class="list-inline-item"><a href="http://dykraf.com/demos/motomobs" target="_blank" class="list-item" title="List Item"><span class="fa fa-cart-plus"></span> Buy</a></li>
 						</ul>
 					</div>
 				</div>
@@ -380,9 +361,9 @@
 						<h5 class="card-title">Card title that wraps to a new line</h5>
 						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 						<ul class="list-inline">
-							<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-tag"></span> Hoodie</a></li>
-							<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-money-bill-alt"></span> $ 88</a></li>
-							<li class="list-inline-item"><a href="https://www.ebay.com/rpp/moda-en" target="_blank" class="list-item"><span class="fa fa-cart-plus"></span> Buy</a></li>
+							<li class="list-inline-item"><a href="" class="list-item" title="List Item"><span class="fa fa-tag"></span> Hoodie</a></li>
+							<li class="list-inline-item"><a href="" class="list-item" title="List Item"><span class="fa fa-money-bill-alt"></span> $ 88</a></li>
+							<li class="list-inline-item"><a href="http://dykraf.com/demos/motomobs" target="_blank" class="list-item" title="List Item"><span class="fa fa-cart-plus"></span> Buy</a></li>
 						</ul>
 					</div>
 				</div>
@@ -392,9 +373,9 @@
 						<h5 class="card-title">Card title that wraps to a new line</h5>
 						<p class="card-text">This dolor sit amet a little bit longer.</p>
 						<ul class="list-inline">
-							<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-tag"></span> Leather Jacket</a></li>
-							<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-money-bill-alt"></span> $ 110</a></li>
-							<li class="list-inline-item"><a href="https://www.ebay.com/rpp/moda-en" target="_blank" class="list-item"><span class="fa fa-cart-plus"></span> Buy</a></li>
+							<li class="list-inline-item"><a href="javascript:;" class="list-item" title="List Item"><span class="fa fa-tag"></span> Leather Jacket</a></li>
+							<li class="list-inline-item"><a href="javascript:;" class="list-item" title="List Item"><span class="fa fa-money-bill-alt"></span> $ 110</a></li>
+							<li class="list-inline-item"><a href="http://dykraf.com/demos/motomobs" target="_blank" class="list-item" title="List Item"><span class="fa fa-cart-plus"></span> Buy</a></li>
 						</ul>
 					</div>
 				</div>		
@@ -404,9 +385,9 @@
 						<h5 class="card-title">Card title that wraps to a new line</h5>
 						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 						<ul class="list-inline">
-							<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-tag"></span> Long Sleeves</a></li>
-							<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-money-bill-alt"></span> $ 15</a></li>
-							<li class="list-inline-item"><a href="https://www.ebay.com/rpp/moda-en" target="_blank" class="list-item"><span class="fa fa-cart-plus"></span> Buy</a></li>
+							<li class="list-inline-item"><a href="javascript:;" class="list-item" title="List Item"><span class="fa fa-tag"></span> Long Sleeves</a></li>
+							<li class="list-inline-item"><a href="javascript:;" class="list-item" title="List Item"><span class="fa fa-money-bill-alt"></span> $ 15</a></li>
+							<li class="list-inline-item"><a href="http://dykraf.com/demos/motomobs" target="_blank" class="list-item" title="List Item"><span class="fa fa-cart-plus"></span> Buy</a></li>
 						</ul>
 					</div>
 				</div>
@@ -416,9 +397,9 @@
 						<h5 class="card-title">Card title that wraps to a new line</h5>
 						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 						<ul class="list-inline">
-							<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-tag"></span> T-Shirt</a></li>
-							<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-money-bill-alt"></span> $ 12</a></li>
-							<li class="list-inline-item"><a href="https://www.ebay.com/rpp/moda-en" target="_blank" class="list-item"><span class="fa fa-cart-plus"></span> Buy</a></li>
+							<li class="list-inline-item"><a href="javascript:;" class="list-item" title="List Item"><span class="fa fa-tag"></span> T-Shirt</a></li>
+							<li class="list-inline-item"><a href="javascript:;" class="list-item" title="List Item"><span class="fa fa-money-bill-alt"></span> $ 12</a></li>
+							<li class="list-inline-item"><a href="http://dykraf.com/demos/motomobs" target="_blank" class="list-item" title="List Item"><span class="fa fa-cart-plus"></span> Buy</a></li>
 						</ul>
 					</div>
 				</div>		
@@ -428,62 +409,66 @@
 						<h5 class="card-title">Card title that wraps to a new line</h5>
 						<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, officiis.</p>
 						<ul class="list-inline">
-							<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-tag"></span> T-Shirt</a></li>
-							<li class="list-inline-item"><a href="" class="list-item"><span class="fa fa-money-bill-alt"></span> $ 12</a></li>
-							<li class="list-inline-item"><a href="https://www.ebay.com/rpp/moda-en" target="_blank" class="list-item"><span class="fa fa-cart-plus"></span> Buy</a></li>
+							<li class="list-inline-item"><a href="javascript:;" class="list-item" title="List Item"><span class="fa fa-tag"></span> T-Shirt</a></li>
+							<li class="list-inline-item"><a href="javascript:;" class="list-item" title="List Item"><span class="fa fa-money-bill-alt"></span> $ 12</a></li>
+							<li class="list-inline-item"><a href="http://dykraf.com/demos/motomobs" target="_blank" class="list-item" title="List Item"><span class="fa fa-cart-plus"></span> Buy</a></li>
 						</ul>
 					</div>
 				</div>
-			</div>			
-			<div class="container waypoint-handler">
-			</div>			
+			</div>
+			<div class="container waypoint-handler"></div>
 		</div>
 	</section>            
         </main>
     <!-- Footer -->
 <footer class="pb-2 pt-4 bg-dark" id="footer">
-    <div class="d-flex justify-content-between py-3">
-        <div class="col col-sm-9">
-            <div class="row">
-                <div class="col">
-                    <ul class="nav flex-column m-2">
-                        <li class="nav-item"><a href="about.html" class="list-item ">About Us</a></li>
-                        <li class="nav-item"><a href="services.html" class="list-item ">Services</a></li>                        
-                        <li class="nav-item"><a href="custom.html" class="list-item ">Custom</a></li>
-                        <li class="nav-item"><a href="garage.html" class="list-item ">Garage</a></li>
-                        <li class="nav-item"><a href="gallery.html" class="list-item ">Gallery</a></li>                        
-                        <li class="nav-item"><a href="contact.html" class="list-item ">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul class="nav flex-column m-2">
-                        <li class="nav-item"><a href="blog.html" class="list-item ">Blog</a></li>
-                        <li class="nav-item"><a href="custom_detail.html" class="list-item ">Custom Detail</a></li>                        
-                        <li class="nav-item"><a href="wearable.html" class="list-item ">Wearables</a></li>                        
-                        <li class="nav-item"><a href="samples.html" class="list-item ">Samples</a></li>
-                        <li class="nav-item"><a href="contact.html" class="list-item ">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col">
+    <div class="container">
+        <div class="d-flex justify-content-between py-3">
+            <div class="col col-sm-9">
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav flex-column m-2">
+                            <li class="nav-item"><a href="about.html" class="list-item ">About Us</a></li>
+                            <li class="nav-item"><a href="services.html" class="list-item ">Services</a></li>                        
+                            <li class="nav-item"><a href="custom.html" class="list-item ">Custom</a></li>
+                            <li class="nav-item"><a href="garage.html" class="list-item ">Garage</a></li>
+                            <li class="nav-item"><a href="gallery.html" class="list-item ">Gallery</a></li>                        
+                            <li class="nav-item"><a href="contact.html" class="list-item ">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="nav flex-column m-2">
+                            <li class="nav-item"><a href="blog.html" class="list-item ">Blog</a></li>
+                            <li class="nav-item"><a href="custom_detail.html" class="list-item ">Custom Detail</a></li>                        
+                            <li class="nav-item"><a href="wearable.html" class="list-item ">Wearables</a></li>                        
+                            <li class="nav-item"><a href="booking.html" class="list-item ">Booking</a></li>
+                            <li class="nav-item"><a href="samples.html" class="list-item ">Samples</a></li>                            
+                        </ul>
+                    </div>
                     <div class="d-block bg-dark clearfix">
-                        <div class="container">
+                        <div class="container" id="newsletter">
                             <h6 class="m-0 p-0">Newsletter</h6>
-                            <form class="form-horizontal">
-                                <div class="form-row">
+                            <form class="form-inline">
+                                <div class="input-group">
                                     <label class="sr-only">Subscribe</label>
-                                    <input class="form-control form-control-sm" name="subscribe" value="" placeholder="email" type="text">
-                                    <button class="btn btn-outline-secondary btn-sm btn-block" type="submit" name="submit">SUBSCRIBE</button>
+                                    <div class="form-row m-0 p-0">
+                                        <input class="form-control form-control-sm col-8 col-md-6" name="subscribe" value="" placeholder="email" type="text">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary btn-sm" type="submit" name="submit">subscribe</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </form>
+                            <div class="text-muted small">Latest updates from our garage</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col col-sm-3 pt-2">
-            <div class="text-center">
-                <img alt="Brand Logo" class="img-fluid" src="assets/img/brand-logo.png" data-src="holder.js/300x120/thumb">
-                <div class="text-muted small pt-2">South Jakarta, Indonesia</div>
+            <div class="col col-md-3 pt-2">
+                <div class="text-center">
+                    <img alt="Brand Logo" class="img-fluid" src="./assets/img/brand-logo.png" data-src="holder.js/300x120/thumb">
+                    <div class="text-muted small pt-2">South Jakarta, Indonesia</div>
+                </div>
             </div>
         </div>
     </div>
@@ -500,7 +485,8 @@
 </div>
     </div>    
     <!-- Placed at the end of the document so the pages load faster -->
-    <script>window.jQuery || document.write('<script src="assets/js/jquery/jquery.min.js"><\/script>')</script>
+    <!-- <script>window.jQuery || document.write('<script src="./assets/js/jquery/jquery.min.js"><\/script>')</script> -->
+    
     <script src="assets/js/jquery/jquery.min.js"></script>
     <script src="assets/js/html5shiv.min.js"></script>
     <script src="assets/js/holder.min.js"></script>
@@ -509,14 +495,12 @@
     <script src="assets/js/jRespond.js"></script>
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <!-- <script src="assets/js/masonry.pkgd.min.js"></script> -->
-    <script src="assets/js/modernizr.custom.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/baguetteBox.min.js"></script>
-    <script src="assets/js/script.js"></script>
-
-    
-    <script src="http://localhost:3000/vendor.js"></script>
-    <script src="http://localhost:3000/main.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/main.js"></script>
         
 </body>
 
