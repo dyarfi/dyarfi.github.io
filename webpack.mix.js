@@ -13,12 +13,12 @@ const { mix } = require('laravel-mix');
 
 // Multiple
 //mix.js('resources/assets/js/app.js', 'public/js')
-   //.sass('resources/assets/sass/app.scss', 'public/css');
+//.sass('resources/assets/sass/app.scss', 'public/css');
 
 mix.setPublicPath('./');
 
 mix.sass('static/sass/app.scss', 'static/css/minified').options({
-      processCssUrls: false
+  processCssUrls: false
 });
 
 // Multiple
@@ -27,13 +27,13 @@ mix.sass('static/sass/app.scss', 'static/css/minified').options({
 //mix.less('resources/assets/less/app.less', 'public/css');
 
 mix.browserSync({
-    host: 'localhost',
-    port: 3000,
-    proxy: 'localhost/dyarfi.github.io/',
-    files: ["static/css/*.css","static/css/minified/*.css","static/sass/*.sass", "static/js/*.js","index.html"],
-    // Open the site in Chrome & Firefox
-    browser: ["google chrome", "firefox"],
-    // Don't show any notifications in the browser.
-    notify: false
+  host: 'localhost',
+  port: 3000,
+  proxy: 'localhost/dyarfi.github.io/',
+  files: ["static/css/*.css","static/css/minified/*.css","static/sass/*.sass", "static/js/*.js","index.html"],
+  // Open the site in Chrome & Firefox
+  browser: ["google chrome", "firefox"],
+  // Don't show any notifications in the browser.
+  notify: false
 });
 
