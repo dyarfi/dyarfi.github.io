@@ -13,7 +13,7 @@
           :aria-controls="menu.label"
           role="tab"
           data-toggle="tab"
-          @click="clickOnTabLink"
+          @click="activeTab($event)"
         >
           <span
             :class="`${menu.icon}${currentActive(menu.active) && ' fa-beat'}`"
@@ -394,7 +394,7 @@
               </div>
               <form
                 id="contact_form"
-                class="form-horizontal"
+                class="w-full"
                 method="post"
                 action="process.php"
               >
@@ -404,7 +404,7 @@
                     id="name"
                     type="text"
                     disabled=""
-                    class="form-control"
+                    class="form-control w-1/2 block"
                     name="name"
                     placeholder="Name"
                   />
@@ -415,7 +415,7 @@
                     id="email"
                     type="text"
                     disabled=""
-                    class="form-control"
+                    class="form-control w-1/2 block"
                     name="email"
                     placeholder="Email"
                   />
@@ -427,12 +427,12 @@
                     rows="5"
                     cols="3"
                     disabled=""
-                    class="form-control"
+                    class="form-control w-1/2 block"
                     placeholder="Message"
                     name="message"
                   ></textarea>
                 </div>
-                <div class="form-group">
+                <div class="form-group w-1/2 block">
                   <div class="clearfix"></div>
                   <input
                     type="submit"
@@ -522,6 +522,19 @@ export default {
     },
     currentActive(active) {
       return active ? ' active' : ''
+    },
+    activeTab(event) {
+      const siblings = event.currentTarget.parentNode.querySelectorAll('li')
+      for (const item of siblings) {
+        item.children[0].innerHTML = 'Inactive'
+        // item.children[1].classList.add('hidden')
+        item.classList.add('text-gray-600')
+        item.classList.remove('text-indigo-700')
+      }
+      event.currentTarget.children[0].innerHTML = 'Active'
+      // event.currentTarget.children[1].classList.remove('hidden')
+      event.currentTarget.classList.remove('text-gray-600')
+      event.currentTarget.classList.add('text-indigo-700')
     },
   },
 }
